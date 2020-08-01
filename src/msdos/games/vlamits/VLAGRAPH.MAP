@@ -1,0 +1,147 @@
+00 blank     Case vide
+01 brick     Brique
+02 blank     Marque la position du joueur
+03 blank     Piege qui retire de l'energie
+04 blank     Case vide avec stop
+05 ladder!   Echelle avec stop
+06 ladder!   Echelle
+07 root      Racine
+08 tnt       Baton de dynamite (explosif)
+09 shield    Bouclier
+0A chest     Coffre de tresor
+0B obottle   Bouteille d'oxygene
+0C flower    Fleur evoluee
+0D diamond   Diamant
+0E hkey      Clef en forme de coeur
+0F hdoor     Porte en forme de coeur
+10 wkey      Clef etrange
+11 wdoor     Porte etrange
+12 melkey    Clef de Melanie Leclerc
+13 meldoor   Porte de Melanie leclerc
+14 water2    Eau soumarine
+15 water2    Eau soumarine avec stop
+16 wladder   Echelle sous l'eau
+17 wroot2    Racine sous l'eau
+18 wshield   Bouclier sous l'eau
+19 wchest    Coffre de tresor sous l'eau
+1A wobotll   Bouteille d'eau sous l'eau
+1B wflower   Fleur sous l'eau
+1C wdiamon   Diamant sous l'eau
+1D wnewpla   Algue sous-marine
+1E whkey     Clef en forme de coeur sous l'eau
+1F whdoor    Porte en forme de coeur sous l'eau
+20 wwkey     Clef etrange sous l'eau
+21 wwdoor    Porte etrange sous l'eau
+22 wmelkey   Clef Melanie Leclerc sous l'eau
+23 wmeldoor  Porte Melanie Leclerc sous l'eau
+24 water!    Eau de surface
+25 wladde2   Echelle de surface
+26 wroot     Racine de surface
+27 wterre    Terre sous l'eau
+28 pattern5  Mur de brique a l'aire
+29 wpatt5b   Mur de brique a la surface
+2A wpatte5   Mur de brique sous l'eau
+2B lava-p5   Mur de brique lava-surface
+2C lava2p5   Mur de brique lava-profondeur
+2D wrocknp   Roche #1 et plante sous l'eau
+2E wrock     Roche #1 sous l'eau
+2F wrock2    Roche #2 sous l'eau
+30 wrock3    Roche #3 sous l'eau
+31 wrock4    Roche #4 sous l'eau
+32 broot     Pont et corde
+33 bridge    Pond portant un stop
+34 bridge    Pond
+35 br01      Pond #1
+36 br02      Pond #2
+37 br03      Pond #3
+38 br04      Pond #4
+39 br05      Pond #5
+3A br06      Pond #6
+3B br07      Pond #7
+3C br08      Pond #8
+3D br09      Pond #9
+3E br10      Pond #10
+3F br11      Pond #11
+40 root      Corde qui se brise
+41 lava      Substance dissolvante (haut)
+42 lava2     Substance dissolvante (bas)
+43 flower    Fleur => Mur 00
+44 pattern5  Mur mutanoid 00
+45 flower    Fleur => Mur 01
+46 pattern5  Mur mutanoid 01
+47 flower    Fleur => Mur 02
+48 pattern5  Mur mutanoid 02
+49 wflower   W-Fleur => Mur 03
+4A pattern5  Mur mutanoid 03
+4B flower    Fleur => Mur 04
+4C wpatte5   W-Mur mutanoid 04
+4D flower    Fleur => Mur 05
+4E wpatte5   W-Mur mutanoid 05
+4F wflower   W-Fleur => Mur 06
+50 wpatte5   W-Mur mutanoid 06
+51 wflower   W-Fleur => Mur 07
+52 wpatte5   W-Mur mutanoid 07
+53 flower    Fleur => Mur 08
+54 wpatt5b   SW-Mur mutanoid 08
+55 flower    Fleur => Mur 09
+56 wpatt5b   SW-Mur mutanoid 09
+57 wflower   Fleur => Mur 10
+58 wpatt5b   SW-Mur mutanoid 10
+59 flower    Fleur => Mur 11
+5A wpatt5b   SW-Mur mutanoid 11
+5B flower    Fleur => Vide 12
+5C blank     Vide mutanoid 12
+5D flower    Fleur => Vide 13
+5E blank     Vide mutanoid 13
+5F flower    Fleur => Vide 14
+60 blank     Vide mutanoid 14
+61 flower    Fleur => Vide 15
+62 blank     Vide mutanoid 15
+63 wflower   Fleur => Eau 16
+64 water2    Eau mutanoid 16
+65 wflower   Fleur => Eau 17
+66 water2    Eau mutanoid 17
+67 wflower   Fleur => Eau 18
+68 water2    Eau mutanoid 18
+69 wflower   Fleur => Eau 19
+6A water2    Eau mutanoid 19
+6B transpo   Transporteur libre 00
+6C blank     Destination 00
+6D transpo   Transporteur libre 01
+6E blank     Destination 01
+6F transpo   Transporteur libre 02
+70 blank     Destination 02
+71 wntrans   Transporteur sous eaux 03
+72 blank     Destination 03
+73 wntrans   Transporteur sous eaux 04
+74 blank     Destination 04
+75 wntrans   Transporteur sous eaux 05
+76 blank     Destination 05
+77 magicpla  Platforme vertical
+78 x         Non-defini
+79 x         Non-defini
+7A dummy     Dummy sur case vide
+7B br-dum    Dummy sur pond
+7C la-dum    Dummy sur echelle
+7D teddy     Teddy sur case vide
+7E br-ted    Teddy sur pond
+7F la-ted    Teddy sur echelle
+80 gobblin   Gobblin sur case vide
+81 br-go     Gobblin sur pond
+82 la-go     Gobblin sur echelle
+83 ghost     Fantome sur case vide
+84 gh-br     Fantome sur pond
+85 gh-la     Fantome sur echelle
+86 orakey    Clef vivante sur case vide
+87 okbrid    Clef vivante sur pond
+88 okladd    Clef vivante sur echelle
+89 oradoor   Porte vivante sur case vide
+8A odbrid    Porte vivante sur pond
+8B odladd    Porte vivante sur echelle
+8C spider    Araignee sur case vide
+8D bspider   Araignee sur pond
+8E lspider   Araignee sur echelle
+8F magicpla  Platforme horizontale
+90 wfish     Pyranna
+91 atnt      Baton de tnt actif
+92 water!    Eau de surface avec un stop

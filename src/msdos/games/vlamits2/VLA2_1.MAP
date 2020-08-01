@@ -1,0 +1,315 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 0FFFFH 10000H SCREEN                 SCREEN 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 10000H 1FFFFH 10000H FONT                   FONT 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 20000H 2FFFFH 10000H FONT2                  FONT2 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 30000H 3FFFFH 10000H FONT3                  FONT3 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 40000H 4FFFFH 10000H FONT4                  FONT4 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 50000H 5FFFFH 10000H LIBRAIRY               LIBRAIRY 16-bit
+               at offset 00000H 10000H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+
+ 60000H 603FFH 00400H STACK                   16-bit
+               at offset 00000H 00400H bytes from VLAMITS2.obj (VLAMITS2.ASM)
+
+ 60400H 60BF7H 007F8H MSG                     16-bit
+               at offset 00000H 007F8H bytes from VLAMITS2.obj (VLAMITS2.ASM)
+
+ 60C00H 6D08FH 0C490H DATA                   DATA 16-bit
+               at offset 00000H 0AAB2H bytes from VLAMITS2.obj (VLAMITS2.ASM)
+               at offset 0AAC0H 001B2H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94REPV2.ASM)
+               at offset 0AC80H 00042H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+               at offset 0ACD0H 00737H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95COLORS.ASM)
+               at offset 0B410H 00037H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95STRING.ASM)
+               at offset 0B450H 01040H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95STV2_1.ASM)
+
+ 6D090H 6D090H 00000H CTVOICE                CODE 16-bit
+ 6D090H 79F4FH 0CEC0H CODE                   CODE 16-bit
+               at offset 00000H 0BF00H bytes from VLAMITS2.obj (VLAMITS2.ASM)
+               at offset 0BF00H 001DDH bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94REPV2.ASM)
+               at offset 0C0E0H 004B7H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\94STATV2.ASM)
+               at offset 0C5A0H 000D4H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95COLORS.ASM)
+               at offset 0C680H 000C0H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95STRING.ASM)
+               at offset 0C740H 00780H bytes from ..\..\MASM61\LISTING\RUN95.LIB (1995\95STV2_1.ASM)
+
+
+  Address         Publics by Name
+
+ 6D09:9CE9       AdjPlyFrame
+ 6D09:8D33       AfficherGameInfo
+ 6D09:9BEF       AjusterEcran
+ 6D09:83B9       AjusterFleurFrames
+ 60C0:ACBC       BKCOLOR
+ 6D09:99F3       BlueFadeIn
+ 6D09:9D51       ChangeBloquerIntoBlanks
+ 6D09:81B0       ChangeScrSize
+ 6D09:9D03       ChangeStopsIntoBlanks
+ 6D09:A57D       CompterFleurs
+ 6D09:A5A3       CompterObjsFow
+ 6D09:9D9F       CreaturesModule
+ 6D09:0000       CtVoiceDrv
+ 60C0:AD07       C_Registers
+ 6D09:9A5A       DarkColors
+ 6D09:A547       DessinerBck
+ 6D09:9BF4       DessinerEcran
+ 6D09:C5E4       DisableRefresh
+ 6D09:98CE       DoIntro
+ 6D09:94E1       DoSelect
+ 6D09:C8D0       DrawBck
+ 6D09:87FE       DRAWBOARD
+ 6D09:C912       DrawFow
+ 60C0:C48A       DrawOffset
+ 6D09:C36E       DRAWSCREEN
+ 6D09:CC12       DrawScript
+ 6D09:C546       DRAWSOMESCREEN
+ 6D09:BF00       EHANDLER
+ 60C0:AC1D       EHANDLERTXT
+ 6D09:C5CB       EnableRefresh
+ 6D09:A5E4       EndSection
+ 6D09:C4F6       ERASESCREEN
+ 60C0:AC1A       ERRORHANDLER
+ 6D09:BF4F       EXIT
+ 6D09:BF53       EXT
+ 60C0:ABFC       EX_
+ 6D09:A2B0       FallModulator
+ 60C0:AC18       FILEIDCODE
+ 6D09:C5FD       FillRegisters
+ 6D09:C5A0       FindColorsUsed
+ 60C0:AC00       FX_
+ 6D09:A632       GameSys
+ 6D09:BF2A       GETAX
+ 6D09:C627       GetRegisters
+ 60C0:AC04       GX_
+ 6D09:8593       HISCORESYS
+ 60C0:AC08       HX_
+ 60C0:B488       ImaPtrTable
+ 5000:0000       IMSDEFS
+ 5000:D000       IMSNAMES
+ 6D09:9C89       InitJoueur
+ 6D09:BD24       InitSystem
+ 6D09:9469       Intro
+ 60C0:AC0C       IX_
+ 60C0:AC10       KX_
+ 6D09:9A98       LoadDemo
+ 6D09:C0E0       LOADIMS
+ 6D09:9B4D       LoadLevel
+ 6D09:BFA1       LOADNEW
+ 6D09:C032       LOADOLD
+ 6D09:C280       LOADSCR
+ 6D09:979D       LocalFadeOut
+ 6D09:9222       LucasUndraw
+ 60C0:AC14       LX_
+ 6D09:C741       MakeImaPtrTable
+ 6D09:C79E       MapLevel
+ 60C0:C48E       MapLevelExtension
+ 6D09:C740       MapLevelExtensionProc
+ 60C0:ACB8       MX
+ 60C0:ACB9       MY
+ 60C0:AC1C       OLD_VIDEO_MODE
+ 60C0:B007       O_Registers
+ 6D09:92FE       PauseGame
+ 6D09:A30A       PickUp
+ 60C0:C488       Ply2Offset
+ 6D09:9C25       PlyOxyCtrl
+ 6D09:BF6F       QUIT
+ 6D09:820B       RepositionnerPLY
+ 6D09:808E       SayLevelName
+ 5000:8000       SCRDEFS
+ 60C0:ACBB       SCRHEI
+ 6D09:CD86       ScriptExec
+ 60C0:ACC0       SCRIPTSIZE
+ 60C0:ACBA       SCRLEN
+ 6D09:CA5F       ScrollDn
+ 6D09:C9CC       ScrollLf
+ 6D09:C932       ScrollRg
+ 6D09:CAEA       ScrollUp
+ 5000:C000       SCRTEMP
+ 6D09:BF81       SENDERRORMESSAGE
+ 6D09:CB76       SlowDown
+ 6D09:8CC3       StallGameInfo
+ 5000:F000       STODEFS
+ 60C0:AAF9       STRINGBUFFER
+ 60C0:AC45       STRINGOVERFLOW
+ 6D09:C854       TrierObjs
+ 6D09:BF05       VIDEOSWITCH
+ 6D09:931B       VLAMITS2
+ 6D09:BF61       WBUT
+ 6D09:8DD5       _ADDTOSCORE
+ 6D09:8451       _AFFICHERTITRE
+ 6D09:895B       _BITEPLAYER
+ 6D09:8A41       _CANWALK
+ 6D09:81DB       _COPYSCR
+ 6D09:8A19       _DECLIFEFORCE
+ 6D09:8FFC       _DOPICKUP
+ 6D09:835B       _DRAWBAR
+ 6D09:CC30       _DRAWENTRY
+ 6D09:84C2       _DRAWMSG
+ 6D09:83F0       _DRAWSTRING
+ 6D09:CBC0       _FINDLEADINGCHAR
+ 6D09:8E01       _GRAB
+ 6D09:89F1       _INCLIFEFORCE
+ 6D09:8E3E       _ISFALLING
+ 6D09:8881       _IsPlayerInLava
+ 6D09:88A3       _ISPLAYERTHERE
+ 6D09:8934       _ISUNDERWATER
+ 6D09:7FFD       _LOADVOC
+ 6D09:8ED1       _MAKEMOVE
+ 6D09:8EC1       _MapLevelExtensionProc
+ 6D09:8F27       _MAYFALL
+ 6D09:90F8       _ONLADDER
+ 6D09:82D9       _PAUSE
+ 6D09:8BF8       _REMOVEACT
+ 6D09:C70B       _REPLACECHAR
+ 6D09:C64B       _SETCOLOR
+ 6D09:C680       _STRCMP
+ 6D09:C6BA       _STRCMPI
+ 6D09:C6ED       _STRLEN
+ 6D09:82FA       _TAGFONT
+ 6D09:8F3C       _TESTAIM
+ 6D09:9146       _WILLFALL
+
+  Address         Publics by Value
+
+ 5000:0000       IMSDEFS
+ 5000:8000       SCRDEFS
+ 5000:C000       SCRTEMP
+ 5000:D000       IMSNAMES
+ 5000:F000       STODEFS
+ 60C0:AAF9       STRINGBUFFER
+ 60C0:ABFC       EX_
+ 60C0:AC00       FX_
+ 60C0:AC04       GX_
+ 60C0:AC08       HX_
+ 60C0:AC0C       IX_
+ 60C0:AC10       KX_
+ 60C0:AC14       LX_
+ 60C0:AC18       FILEIDCODE
+ 60C0:AC1A       ERRORHANDLER
+ 60C0:AC1C       OLD_VIDEO_MODE
+ 60C0:AC1D       EHANDLERTXT
+ 60C0:AC45       STRINGOVERFLOW
+ 60C0:ACB8       MX
+ 60C0:ACB9       MY
+ 60C0:ACBA       SCRLEN
+ 60C0:ACBB       SCRHEI
+ 60C0:ACBC       BKCOLOR
+ 60C0:ACC0       SCRIPTSIZE
+ 60C0:AD07       C_Registers
+ 60C0:B007       O_Registers
+ 60C0:B488       ImaPtrTable
+ 60C0:C488       Ply2Offset
+ 60C0:C48A       DrawOffset
+ 60C0:C48E       MapLevelExtension
+ 6D09:0000       CtVoiceDrv
+ 6D09:7FFD       _LOADVOC
+ 6D09:808E       SayLevelName
+ 6D09:81B0       ChangeScrSize
+ 6D09:81DB       _COPYSCR
+ 6D09:820B       RepositionnerPLY
+ 6D09:82D9       _PAUSE
+ 6D09:82FA       _TAGFONT
+ 6D09:835B       _DRAWBAR
+ 6D09:83B9       AjusterFleurFrames
+ 6D09:83F0       _DRAWSTRING
+ 6D09:8451       _AFFICHERTITRE
+ 6D09:84C2       _DRAWMSG
+ 6D09:8593       HISCORESYS
+ 6D09:87FE       DRAWBOARD
+ 6D09:8881       _IsPlayerInLava
+ 6D09:88A3       _ISPLAYERTHERE
+ 6D09:8934       _ISUNDERWATER
+ 6D09:895B       _BITEPLAYER
+ 6D09:89F1       _INCLIFEFORCE
+ 6D09:8A19       _DECLIFEFORCE
+ 6D09:8A41       _CANWALK
+ 6D09:8BF8       _REMOVEACT
+ 6D09:8CC3       StallGameInfo
+ 6D09:8D33       AfficherGameInfo
+ 6D09:8DD5       _ADDTOSCORE
+ 6D09:8E01       _GRAB
+ 6D09:8E3E       _ISFALLING
+ 6D09:8EC1       _MapLevelExtensionProc
+ 6D09:8ED1       _MAKEMOVE
+ 6D09:8F27       _MAYFALL
+ 6D09:8F3C       _TESTAIM
+ 6D09:8FFC       _DOPICKUP
+ 6D09:90F8       _ONLADDER
+ 6D09:9146       _WILLFALL
+ 6D09:9222       LucasUndraw
+ 6D09:92FE       PauseGame
+ 6D09:931B       VLAMITS2
+ 6D09:9469       Intro
+ 6D09:94E1       DoSelect
+ 6D09:979D       LocalFadeOut
+ 6D09:98CE       DoIntro
+ 6D09:99F3       BlueFadeIn
+ 6D09:9A5A       DarkColors
+ 6D09:9A98       LoadDemo
+ 6D09:9B4D       LoadLevel
+ 6D09:9BEF       AjusterEcran
+ 6D09:9BF4       DessinerEcran
+ 6D09:9C25       PlyOxyCtrl
+ 6D09:9C89       InitJoueur
+ 6D09:9CE9       AdjPlyFrame
+ 6D09:9D03       ChangeStopsIntoBlanks
+ 6D09:9D51       ChangeBloquerIntoBlanks
+ 6D09:9D9F       CreaturesModule
+ 6D09:A2B0       FallModulator
+ 6D09:A30A       PickUp
+ 6D09:A547       DessinerBck
+ 6D09:A57D       CompterFleurs
+ 6D09:A5A3       CompterObjsFow
+ 6D09:A5E4       EndSection
+ 6D09:A632       GameSys
+ 6D09:BD24       InitSystem
+ 6D09:BF00       EHANDLER
+ 6D09:BF05       VIDEOSWITCH
+ 6D09:BF2A       GETAX
+ 6D09:BF4F       EXIT
+ 6D09:BF53       EXT
+ 6D09:BF61       WBUT
+ 6D09:BF6F       QUIT
+ 6D09:BF81       SENDERRORMESSAGE
+ 6D09:BFA1       LOADNEW
+ 6D09:C032       LOADOLD
+ 6D09:C0E0       LOADIMS
+ 6D09:C280       LOADSCR
+ 6D09:C36E       DRAWSCREEN
+ 6D09:C4F6       ERASESCREEN
+ 6D09:C546       DRAWSOMESCREEN
+ 6D09:C5A0       FindColorsUsed
+ 6D09:C5CB       EnableRefresh
+ 6D09:C5E4       DisableRefresh
+ 6D09:C5FD       FillRegisters
+ 6D09:C627       GetRegisters
+ 6D09:C64B       _SETCOLOR
+ 6D09:C680       _STRCMP
+ 6D09:C6BA       _STRCMPI
+ 6D09:C6ED       _STRLEN
+ 6D09:C70B       _REPLACECHAR
+ 6D09:C740       MapLevelExtensionProc
+ 6D09:C741       MakeImaPtrTable
+ 6D09:C79E       MapLevel
+ 6D09:C854       TrierObjs
+ 6D09:C8D0       DrawBck
+ 6D09:C912       DrawFow
+ 6D09:C932       ScrollRg
+ 6D09:C9CC       ScrollLf
+ 6D09:CA5F       ScrollDn
+ 6D09:CAEA       ScrollUp
+ 6D09:CB76       SlowDown
+ 6D09:CBC0       _FINDLEADINGCHAR
+ 6D09:CC12       DrawScript
+ 6D09:CC30       _DRAWENTRY
+ 6D09:CD86       ScriptExec
+
+Program entry point at 6D09:BD24

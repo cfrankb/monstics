@@ -1,0 +1,67 @@
+BKCOLOR...........94statv2          C_REGISTERS.......95colors
+DISABLEREFRESH....95colors          DRAWBCK...........95stv2_1
+DRAWFOW...........95stv2_1          DRAWOFFSET........95stv2_1
+DRAWSCREEN........94statv2          DRAWSCRIPT........95stv2_1
+DRAWSCRIPTWITHBIOS..95vgahi         DRAWSOMESCREEN....94statv2
+EHANDLER..........94repv2           EHANDLERTXT.......94repv2
+ENABLEREFRESH.....95colors          ERASESCREEN.......94statv2
+ERRORHANDLER......94repv2           EXIT..............94repv2
+EXT...............94repv2           EX_...............94repv2
+FILEIDCODE........94repv2           FILLREGISTERS.....95colors
+FINDCOLORSUSED....95colors          FX_...............94repv2
+GETAX.............94repv2           GETREGISTERS......95colors
+GX_...............94repv2           HX_...............94repv2
+IMAPTRTABLE.......95stv2_1          IMSDEFS...........94statv2
+IMSNAMES..........94statv2          IX_...............94repv2
+KX_...............94repv2           LOADIMS...........94statv2
+LOADNEW...........94repv2           LOADOLD...........94repv2
+LOADSCR...........94statv2          LX_...............94repv2
+MAKEIMAPTRTABLE...95stv2_1          MAPLEVEL..........95stv2_1
+MAPLEVELEXTENSION..95stv2_1         MAPLEVELEXTENSIONPROC..95stv2_1
+MX................94statv2          MY................94statv2
+OLD_VIDEO_MODE....94repv2           O_REGISTERS.......95colors
+PLY2OFFSET........95stv2_1          QUIT..............94repv2
+SCRDEFS...........94statv2          SCRHEI............94statv2
+SCRIPTEXEC........95stv2_1          SCRIPTSIZE........94statv2
+SCRLEN............94statv2          SCROLLDN..........95stv2_1
+SCROLLLF..........95stv2_1          SCROLLRG..........95stv2_1
+SCROLLUP..........95stv2_1          SCRTEMP...........94statv2
+SENDERRORMESSAGE..94repv2           SLOWDOWN..........95stv2_1
+STODEFS...........94statv2          STRINGBUFFER......94repv2
+STRINGOVERFLOW....94repv2           TRIEROBJS.........95stv2_1
+VIDEOSWITCH.......94repv2           WBUT..............94repv2
+_DRAWENTRY........95stv2_1          _FINDLEADINGCHAR..95stv2_1
+_REPLACECHAR......95string          _SETCOLOR.........95colors
+_STRCMP...........95string          _STRCMPI..........95string
+_STRLEN...........95string          
+
+95vgahi           Offset: 00000010H  Code and data size: 167H
+  DRAWSCRIPTWITHBIOS                
+
+94repv2           Offset: 00000370H  Code and data size: 3cbH
+  EHANDLER          EHANDLERTXT       ERRORHANDLER      EXIT
+  EXT               EX_               FILEIDCODE        FX_
+  GETAX             GX_               HX_               IX_
+  KX_               LOADNEW           LOADOLD           LX_
+  OLD_VIDEO_MODE    QUIT              SENDERRORMESSAGE  STRINGBUFFER
+  STRINGOVERFLOW    VIDEOSWITCH       WBUT            
+
+94statv2          Offset: 000008b0H  Code and data size: 60560H
+  BKCOLOR           DRAWSCREEN        DRAWSOMESCREEN    ERASESCREEN
+  IMSDEFS           IMSNAMES          LOADIMS           LOADSCR
+  MX                MY                SCRDEFS           SCRHEI
+  SCRIPTSIZE        SCRLEN            SCRTEMP           STODEFS
+
+95colors          Offset: 00001260H  Code and data size: 80bH
+  C_REGISTERS       DISABLEREFRESH    ENABLEREFRESH     FILLREGISTERS
+  FINDCOLORSUSED    GETREGISTERS      O_REGISTERS       _SETCOLOR
+
+95string          Offset: 00001500H  Code and data size: f7H
+  _REPLACECHAR      _STRCMP           _STRCMPI          _STRLEN
+
+95stv2_1          Offset: 000016e0H  Code and data size: 17c6H
+  DRAWBCK           DRAWFOW           DRAWOFFSET        DRAWSCRIPT
+  IMAPTRTABLE       MAKEIMAPTRTABLE   MAPLEVEL          MAPLEVELEXTENSION
+  MAPLEVELEXTENSIONPROC               PLY2OFFSET        SCRIPTEXEC
+  SCROLLDN          SCROLLLF          SCROLLRG          SCROLLUP
+  SLOWDOWN          TRIEROBJS         _DRAWENTRY        _FINDLEADINGCHAR

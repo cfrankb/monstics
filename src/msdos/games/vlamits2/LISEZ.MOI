@@ -1,0 +1,294 @@
+
+	LES VLAMITS, deuxième épisode (version d'evaluation)
+	(C) & Programmer par Francois Blanchette.
+
+1.0	Demandes matérielles:
+
+	386 ou mieux (486DX33 recommandé)
+	Une carte VGA standard.
+	500k de mémoire conventionnelle libre. (base memory)
+	En option: Une carte SoundBlaster PRO ou 16.
+
+1.1	Démarrage
+
+1.1.2   Insérer la disquette dans votre unité et tapez...
+	VLAMITS2 [<-]
+
+1.3	Support sonore
+	Ce programme offre un support pour le driver CT-VOICE.DRV V1.10 et plus,
+	disponible avec les cartes SoundBlaster (de Creative Lab). Suivez
+	les directives fournit par le programme au lancement.
+
+1.4 	Questions & Réponses
+	
+1.4.1	Q:J'ai une SoundBlaster PRO, mais quand je démarre VLAMITS2, il
+	n'y pas de musique. 
+
+	R: Certains conflits existes entre les différents programmes
+	qui utilisent la carte de son. Par contre, la plupart du temps
+	ce genre de problème provient d'une des sources suivantes:
+
+	a) PROBLÈME: le programme est incapable de localiser CT-VOICES
+           SOLUTION: Copier CT-VOICE.DRV dans le répertoir C:\SB16\DRV
+
+	b) PROBLÈME: Mauvais i/o base adresse ou interruption (IRQ)
+	   SOLUTION: Pour des raisons de simplicité, VLAMITS2 
+		     utilise SEULEMENT 220h comme i/o base adresse
+	             et IRQ5 comme interruption. Ces spécifications
+		     sont conforme à la configuration de base de
+    		     toutes les cartes SoundBlaster. 
+
+	c) PROBLÈME: Plantage occasionnel & faute de protection
+		     générale sous MS-WINDOWS.
+	   SOLUTION: Pour une raison qui est "nébuleuse", l'utilisation
+     		     de CT-VOICE.DRV sous MS-WINDOWS cause de
+                     temps en temps des fautes de protection générale.
+                     Pour régler le problème, vous n'avez qu'à éviter
+		     d'exécuter le programme sous MS-WINDOWS.
+	                       
+2.0 	Composantes de l'interface
+
+2.1	Force de vie
+	Durant le jeu votre force est indiquée par la ligne VERTE
+	qui se trouve en bas de l'écran. Elle, augmente et diminue
+	au cours de l'évolution du jeu. Si elle atteind ZÉRO, vous
+	êtes mort.
+
+2.2	Oxygène
+	Cet indicateur fait mention de la quantité d'oxygène que vous
+	avez dans vos poumons. La ligne BLANCHE en bas de l'écran vous
+	indique combien d'oxygène vous disposé dans vos poumons. 
+
+	L'oxygène diminue lorsque vous êtes sous-l'eau. Quand vous
+	n'avez plus d'oxygène , votre force de vie se met à diminuer
+	et par conséquent votre vie est en danger. (Avec une
+        carte SoundBlaster on peut entendre le Vlamit crier de
+	douleur)
+
+	Quand vos retourner à la surface, votre niveau d'oxygène retourne
+	à sa quantité initiale.
+	
+2.5	Les touches de contrôle
+		
+		[BAS]    / [2]		En Bas
+		[DROITE] / [4] 		A droite
+		[GAUCHE] / [6]		A Gauche
+		[HAUT]	 / [8]		En Haut
+		[HOME]   / [7]		Saut à gauche
+		[PgUp]   / [9] 		Saut à droite
+		[F1]	                Options....
+		[espace]		Pause
+
+
+3 	NOUVELLES "FEATURES"
+
+	La plupart des fonctions qui suivent sont disponible pendant
+	que vous jouez et pour avoir accès à celle-ci: APPUYER SUR F1.
+
+3.1  	Recommencer le tableau [R]
+	Cette fonction vous permet de recommencer un tableau autant de 
+	fois qu'il vous faudra pour le passer.
+
+3.2 	Sauvergarder votre partie [+]
+	Cette fonction vous permet de sauvegarder une partie en
+	progression et de la restorer plus tard.
+
+3.3	Restaurer votre partie [-]
+	Cette fonction sert à restaurer une partie préalable sauvergarder.
+					
+4.0	Élements du jeu
+
+4.1		La gravité 
+		C'est la force (selon Newton) qui cause tout objet à
+		être attiré vers le sol. Vlamits respect certains des
+		principes de la gravité.
+
+4.1.1		La gravité est présente partout sauf dans l'eau.
+4.1.2		La gravité rend les sauts à partir de platforme volant
+		très difficile (et certaines fois impossible).
+4.1.3		La gravité entraine tout objet dans les airs à tomber.
+4.1.4		La gravité rend impossible de saut lors qu'on est dans le
+		vide.
+
+4.2	L'eau
+		Il s'agit d'un environnement ostile où il très hazardeux
+		de s'aventurer. Hélas, votre quête vous obligera d'y allez
+		certainement fois.
+
+4.2.1		Sous l'eau votre réserve d'oxygène diminue rapidement.
+4.2.2		La gravité est inactive sous l'eau.
+
+4.3 	Les Bonus
+4.3.1	Un bonus de 5000 points est accordé pour avoir complètement
+        vide un tableau de tout objets pouvant être ramassé.
+
+4.3.2   Deux points sont accordé pour chaque unité de vie 
+	à la fin de tableau.
+
+4.3.3   À la fin d'une section, toute les unités de vie
+	excédentaires (>128) sont transformée en points
+        bonus.
+
+4.5	Objets
+
+4.5.1	Les fleurs
+	Vous devez ramassez toutes les fleurs contenues dans un tableau
+	pour pouvoir le complèter.
+
+4.5.2	Les fruits
+	Il ne sont pas nécessaire de les ramassez, mais certains 
+	augmente votre force de vie.
+
+4.5.3	Les diamants
+	Il vous offre un "bonus" de 50pts.
+
+4.6	Obstacles, ennemis et neutres
+
+4.6.1	Poissons
+	Il se déplacent dans l'eau et consomment votre energie (force
+	de vie).
+
+4.6.2	Créatures conforme (COS V1.0)
+	Il se déplacent à l'extérieur de l'eau, consomment votre
+	energie et sont incapable de sauter.
+	
+5.0	À propos des VLAMITS...
+
+5.1	L'histoire
+		Les Vlamits sont une tribue de jeunes guerrières,
+		à l'exception de Jymmy, qui représente la version 
+		moderne des Amazones. C'est dans le premier épisode
+		qu'ils ont entammé leur quête pour amasser une
+		une réserve de fleurs magiques pour contituer la
+		potion qui sauvera Amios, leur sorcier.
+
+		Bien sûr, comme vous allez le découvrir, les fleurs
+		ne sont pas le seul éléments qu'elles ont besoin.
+		Il est de votre devoir de les aider.
+
+5.2	Le jeu
+		Après l'introduction, vous serez invitez à choisir
+		un guerrier qui sera charger de compléter la mission.
+		Il y plusieurs quêtes. Celle que vous choisirez 
+		dépend entièrement de vous.
+		
+		D'une quête à une autre, la difficulté est variable
+		de "FACILE" jusqu'à "DIFFICILE". Il y a une très grande
+		marge entre les obstacles que vous devrez affrontez.
+
+
+5.3	L'auteur
+		Je suis présentement en deuxième session de technique	
+		info. Le deuxième épisode "Des Vlamits" est le 50e
+		jeu que je programme depuis 1986. Il est pour l'instant le
+		seul projet personnel que j'ai entrepris cette année.
+
+		Ce jeu était pour moi un defi, bien que plus je progresse
+		dans sa création et plus sa conception me semble de plus
+		en plus simple. VlamitsII est le fruit de plus de 200
+		heures de codification intensive en assembleur.
+
+		J'ai eu beaucoup de plaisir dans sa rédaction et dans 
+		sa réalisation. J'espère que ce jeu saura atteindre 
+		son but, divertir. 
+
+		Si vous interressez de comparez le Vlamits original avec
+		celui-ci, il ne sufit que choisir "ANCIEN" dans le menu
+		de sélection. Vous serez transporter dans les tableaux
+		que j'ai construit avec les ressources dont je disposait
+		à cet époque, en 1993. (les tableaux originaux ont été
+		convertis en format VLAMITS2).
+
+		L'incorporation dans ce jeu, de mon nouveau système 
+		d'affichage graphique me permet désormait de me défaire
+		des limites imposées par l'ancien.
+
+			
+5.7		CONTRIBUTIONS
+
+		Je souhait à remercier ceux qui ont contribuer de proche
+		ou loin à la réalisation de ce projet.
+
+5.7.1		PRINCIPAL "PLAYTESTER"
+		ma soeur, Hélène 
+		
+5.7.2		PLAYTESTERS
+		ma mère, Denise
+		Daniel Drouin
+		Éric Benoit
+		Éric St-Pierre
+		Nathalie Veillette
+
+5.8		DÉVELLOPEMENT
+
+		Ce programme a été dévelloppé sur 486DX-33 équipé
+		d'une carte ISA-VGA. D'autres tests compatibiliés
+		ont été fait sur des 386SX-55 & 486DX2-66.
+
+
+5.9		*** RESPONSABLITÉ ***
+		François Blanchette ne pourra en aucun cas 
+		etre tenu responsable de la perte de données ou tout 
+		autre dommage résultant de l'utilisation de ce 
+		programme. La version d'évaluation ne 
+		prétend pas correspondre à un besoin quelconque.
+
+5.10		Restrictions d'utilisation
+		Il est INTERDIT d'utiliser du code exécutable provenant
+		du .EXE, des images (ou fragments) provenant des librairies 
+		d'images statiques (.IMA, .IMS), des objets statiques
+		(.STO) et  fichiers scriptes (.SCR).
+
+		Toute codification, est et demeure la propriété exclusive de
+		François Blanchette. L'interdiction vise principalement
+		mais pas exclusivement, l'incorporation de portion de ce jeux 
+		à l'intérieur de programme d'origine diverse.
+
+		Toute reproduction, copie partielle ou complète de ce produit
+		dans des fins de clonages, de programmation parallèle et 
+		d'utilisation de code de ce programme dans les votres est
+		INTERDIT. La génération de "listing" de deassamblage et 
+		la distribution de ces "listings" est aussi INTERDIT.
+
+		La modification et la distribution de versions modifiées de
+		ce produit est AUSSI INTERDIT. L'utilisation et la
+		distribution de tout dérivé de ce produit sont INTERDIT.
+
+5.11		Il est interdit de distribuer des fichier .SCR modifier à 
+		d'autres personnes ne disposant pas de licence d'utilisation.
+
+5.12		Il est interdit de reproduire, distribuer et/ou vendre
+		ce produit sans une autorisation écrite de Francois
+		Blanchette. L'utilisation de ce programme se
+		restreint à une seule version d'évaluation qui 
+		ne peut être utilité à un seul endroit à un
+		moment donnée (même restriction qui s'applique
+		sur l'utilisation d'un livre).
+
+5.13		Cette version d'évaluation ne peut être utilisé pour plus
+		de 15  jours depuis la date d'émission de cette
+		exemplaire exclusif. Il est interdit de faire des
+		copie de disquette d'installation. 
+
+		Apres l'expiration de cette version, vous devrez,
+		l'effacer de votre systeme.
+
+5.14 		REGISTRATION 
+		Un copie de ce produit peut-être registrer pour la
+		somme de 15$ CAN (prendre contact pour s'assurer de
+		la validité de cette offre). Toute copie non-registree
+		doit etre effacee dans les 15 jours suivants 
+		son emission.
+				
+6.0		Informations supplémentaires
+
+		Si vous avez des questions à me poser, ou des 
+		commentaires à communiquer vous pouvez me joindre à:
+
+		FRANCOIS BLANCHETTE
+		3825 BAZIN
+		BROSSARD, QUÉBEC
+		CANADA
+		J4Z-2J3
+	
+		TÉL:1-514-462-1184		

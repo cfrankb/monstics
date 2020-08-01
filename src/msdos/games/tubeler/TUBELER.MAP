@@ -1,0 +1,130 @@
+
+ Start  Stop   Length Name                   Class
+ 00000H 053A9H 053AAH DATA                   DATA 16-bit
+               at offset 00000H 000A8H bytes from ..\..\other\tubeler\94REP.obj (..\LISTING\94REP.ASM)
+               at offset 000B0H 0135CH bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+               at offset 01410H 03F9AH bytes from ..\..\other\tubeler\TUBELER.obj (..\..\OTHER\TUBELER\SOURCES\TUBELER.ASM)
+
+ 053B0H 0660DH 0125EH CODE                   CODE 16-bit
+               at offset 00000H 001CEH bytes from ..\..\other\tubeler\94REP.obj (..\LISTING\94REP.ASM)
+               at offset 001D0H 00457H bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+               at offset 00630H 00C2EH bytes from ..\..\other\tubeler\TUBELER.obj (..\..\OTHER\TUBELER\SOURCES\TUBELER.ASM)
+
+ 06610H 1660FH 10000H STATICS                STATICS 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+
+ 16610H 2660EH 0FFFFH LIBRAIRY               LIBRAIRY 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+
+ 26610H 3660FH 10000H SCREEN                 SCREEN 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+
+ 36610H 4660EH 0FFFFH FONTS                  FONTS 16-bit
+               at offset 00000H 0FFFFH bytes from ..\..\other\tubeler\94STATLB.obj (..\LISTING\94STATLB.ASM)
+
+ 46610H 46A0FH 00400H STACK                   16-bit
+               at offset 00000H 00400H bytes from ..\..\other\tubeler\TUBELER.obj (..\..\OTHER\TUBELER\SOURCES\TUBELER.ASM)
+
+ 46A10H 5220FH 0B800H SIGNSEG                SIGNSEG 16-bit
+               at offset 00000H 0B800H bytes from ..\..\other\tubeler\TUBELER.obj (..\..\OTHER\TUBELER\SOURCES\TUBELER.ASM)
+
+
+  Address         Publics by Name
+
+ 053B:011A       CLS
+ 053B:1247       CONVENSIONS
+ 0000:00DE       DES_EXT
+ 053B:0615       DRAWMOUSE
+ 053B:061E       DRAWMOUSE2
+ 053B:053F       DRAWMOUSEX
+ 053B:04F8       DRAWSOMESCREEN
+ 053B:01D9       DRAW_SCREEN
+ 053B:04B2       ERASESCREEN
+ 053B:00E7       EXIT
+ 053B:0122       EXT
+ 0000:0000       FILENAME
+ 053B:0039       GETAX
+ 0000:130C       ICONS
+ 0000:12FC       LDX
+ 0000:1306       LIBTEMP
+ 0000:00D4       LIB_EXT
+ 053B:0172       LOADIMA
+ 053B:0015       LOADNEW
+ 053B:0018       LOADNEWX
+ 053B:00A6       LOADOLD
+ 053B:00A9       LOADOLDX
+ 053B:03DF       LOADROOM
+ 053B:0076       MAKEPATH
+ 053B:0109       MELO_PAINT
+ 0000:11FC       MOUSEBUF
+ 0000:0038       MOUSE_DOWN
+ 0000:00D3       MX
+ 053B:00EB       NOT_FOUND
+ 0000:00A7       OLD_VIDEO_MODE
+ 0000:145F       PATH
+ 053B:015C       PAUSE
+ 053B:00D5       QUIT
+ 053B:02FF       REDRAW_SCREEN
+ 053B:01D0       RESETSEQUENCE
+ 0000:148F       ROOM_NAMES
+ 0000:00E3       SCRIPTDATA
+ 053B:031D       SCRIPT_COMPILER
+ 0000:00D9       SCR_EXT
+ 053B:013E       SENDERRORMESSAGE
+ 0000:11F8       SHOWMOUSE
+ 0000:10E7       STATUS_TABLE
+ 0000:130A       TEMPDX
+ 053B:0630       TUBELER
+ 053B:0000       VIDEOSWITCH
+ 053B:0130       WBUT
+
+  Address         Publics by Value
+
+ 0000:0000       FILENAME
+ 0000:0038       MOUSE_DOWN
+ 0000:00A7       OLD_VIDEO_MODE
+ 0000:00D3       MX
+ 0000:00D4       LIB_EXT
+ 0000:00D9       SCR_EXT
+ 0000:00DE       DES_EXT
+ 0000:00E3       SCRIPTDATA
+ 0000:10E7       STATUS_TABLE
+ 0000:11F8       SHOWMOUSE
+ 0000:11FC       MOUSEBUF
+ 0000:12FC       LDX
+ 0000:1306       LIBTEMP
+ 0000:130A       TEMPDX
+ 0000:130C       ICONS
+ 0000:145F       PATH
+ 0000:148F       ROOM_NAMES
+ 053B:0000       VIDEOSWITCH
+ 053B:0015       LOADNEW
+ 053B:0018       LOADNEWX
+ 053B:0039       GETAX
+ 053B:0076       MAKEPATH
+ 053B:00A6       LOADOLD
+ 053B:00A9       LOADOLDX
+ 053B:00D5       QUIT
+ 053B:00E7       EXIT
+ 053B:00EB       NOT_FOUND
+ 053B:0109       MELO_PAINT
+ 053B:011A       CLS
+ 053B:0122       EXT
+ 053B:0130       WBUT
+ 053B:013E       SENDERRORMESSAGE
+ 053B:015C       PAUSE
+ 053B:0172       LOADIMA
+ 053B:01D0       RESETSEQUENCE
+ 053B:01D9       DRAW_SCREEN
+ 053B:02FF       REDRAW_SCREEN
+ 053B:031D       SCRIPT_COMPILER
+ 053B:03DF       LOADROOM
+ 053B:04B2       ERASESCREEN
+ 053B:04F8       DRAWSOMESCREEN
+ 053B:053F       DRAWMOUSEX
+ 053B:0615       DRAWMOUSE
+ 053B:061E       DRAWMOUSE2
+ 053B:0630       TUBELER
+ 053B:1247       CONVENSIONS
+
+Program entry point at 053B:0630
