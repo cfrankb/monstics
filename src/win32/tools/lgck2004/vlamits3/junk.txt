@@ -1,0 +1,104 @@
+	// Sound - Combos *******************************
+	// IDC_CSOUND / IDC_CCHSOUND
+
+	CComboBox * pComboSound = (CComboBox *)
+		GetDlgItem (IDC_CSOUND);
+
+	for (n=0; n<m_pDoc->m_game3.m_arrSoundData.GetSize(); 
+		n++)
+	{
+		pComboSound->
+			AddString(m_pDoc->m_game3.m_arrSoundData[n].m_szName);
+	}
+
+	pComboSound -> SetCurSel (m_nSound);
+
+	// Sound Replay Frequency ***********************
+	// IDC_CSFREQ
+
+	CComboBox * pComboSFreq = (CComboBox *)
+		GetDlgItem (IDC_CSFREQ);
+		
+	for (n=0; n<16; n++)
+	{
+		char szText[9];
+		wsprintf(szText,"Speed %d", n);
+		
+		if (n!=0) {
+			i= pComboSFreq->AddString (szText);
+		}
+		else {
+			i= pComboSFreq->AddString ("(too fast)");
+		}
+	}
+
+	pComboSFreq -> SetCurSel (m_nSFreq);
+
+	if (nJoyState!=0)
+	{
+		nIdleTime = nTicks;	
+	}
+	else
+	{
+		if(( nTicks - nIdleTime) > 5) 
+		{
+			nIdleTime = nTicks;
+			player.m_nFrameNo = 
+			player.m_nFrameNo - 
+			player.m_nFrameNo %4; 
+		}
+	}
+
+BOOL CMainFrame::DrawScreen ()
+{
+
+	static bDrawing=FALSE;
+	if (bDrawing) return FALSE;
+	bDrawing = TRUE;
+
+#ifdef _DEBUG
+
+		// Check if primary display surface is lost
+    if ( FAILED( m_game.m_lpDDSPrimary->IsLost() ) )
+	{
+        if ( !m_game.RestoreDDraw((CWnd*)this) ) 
+		{
+            OutputDebugString( "DDraw: Couldn't restore surfaces.\n" );
+			bDrawing= FALSE;
+			return FALSE;
+        }
+    }
+
+	m_game.DrawToBuffer (SCREENLEN, SCREENHEI, 
+		BUFFERLEN, BUFFERHEI, m_game.m_lpDDSPrimary);
+#else
+
+    if ( FAILED( m_game.m_lpDDSPrimary->IsLost() ) )
+	{
+        if ( !m_game.RestoreDDraw((CWnd*)this) ) 
+		{
+            OutputDebugString( "DDraw: Couldn't restore surfaces.\n" );
+			bDrawing= FALSE;
+			return FALSE;
+        }
+    }
+
+	m_game.DrawToBuffer (SCREENLEN, SCREENHEI, 
+			BUFFERLEN, BUFFERHEI, m_game.m_lpDDSBack);
+
+	if ( m_game.m_lpDDSPrimary-> 
+		GetFlipStatus (DDGFS_CANFLIP) == DD_OK)
+    if ( FAILED( m_game.m_lpDDSPrimary->Flip( NULL, DDFLIP_WAIT ) ) )
+	{
+		OutputDebugString ("Couldn't perform flip.\n" );
+		bDrawing = FALSE;
+        return FALSE;
+    }
+	
+	//m_game.m_lpDDSPrimary->Blt (NULL,m_game.m_lpDDSBack,NULL, 0, NULL);
+
+#endif
+
+	bDrawing = FALSE;
+	return TRUE;
+}

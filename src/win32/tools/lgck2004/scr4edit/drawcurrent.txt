@@ -1,0 +1,161 @@
+	// Get exclusive mode
+/*    if FAILED( m_lpDD->SetCooperativeLevel( this->m_hWnd,
+                        DDSCL_EXCLUSIVE | DDSCL_FULLSCREEN ) )
+	{
+		Fail( "Couldn't set cooperative level.\n" );
+		return ;
+	}*/
+
+	/*
+    // Set the display mode. An palettized mode is required for the
+	// working phase of the project
+	if ( FAILED( m_lpDD->SetDisplayMode( 1024, 768, 8 ) ) )
+	{
+		Fail( "Fatal: Couldn't set display mode.\n" );
+		return ;
+	}*/
+
+
+
+#2
+	BOOL m_bIgnoreStops
+	int m_nDamages
+	int m_nHitPoints
+	int m_nPowerLevel
+
+#3
+
+	int		m_nPoints;
+	int		m_nChProto;
+	int		m_nChSound;
+
+	int 		m_nRbDelay;
+	int		m_nRebirths;
+
+	CSuperString operator + (CSuperString & str);
+	CSuperString operator = (CSuperString & str);
+	CSuperString (const CString & str);
+	CSuperString operator + (const CString & str);
+	CSuperString operator + ( int n);
+	CSuperString();
+	CSuperString operator = (const CString & str);
+	CSuperString operator = (int n);
+
+
+CSuperString CSuperString::operator = (int n)
+{
+	char sz[8];
+	wsprintf(sz, "%d", n);
+	m_strText = sz;
+	return *this;
+}
+
+
+CSuperString CSuperString::operator = (const CString & str)
+{
+	m_strText = str;
+	return *this;
+}
+
+CSuperString CSuperString::operator + ( int n)
+{
+	char sz[8];
+	wsprintf(sz, "%d", n);
+	m_strText = m_strText + sz;
+	return *this;
+}
+
+CSuperString CSuperString::operator + (const CString & str)
+{
+	m_strText = m_strText + str;
+	return *this;
+	
+}
+
+
+
+CSuperString CSuperString::operator = (CSuperString & str)
+{
+	m_strText = str.m_strText;
+	return *this;
+}
+
+CSuperString CSuperString::operator + (CSuperString & str)
+{
+	m_strText = m_strText + str.m_strText;
+	return *this;
+}
+
+
+
+
+/*
+	if ((game.m_nScripts !=0) &&
+		(game[game.m_nCurrScript]->GetSize()!=0) &&
+		(game[game.m_nCurrScript]->m_bSelection))	{
+
+		CScriptArray & script = * game[game.m_nCurrScript];
+		CScriptEntry & entry = script[script.m_nCurrEntry];
+		COBL3Filter & filter = 
+			* game.m_arrOBL3 [entry.m_nFrameSet];
+		CSS3Frame * pFrame = filter [entry.m_nFrameNo];
+
+		// Using the GDI's Rectangle function to blt a  
+		// rectangle unto the DDraw backbuffer.
+		
+		// But first let's get a DC for the surface.
+
+	    HDC  hdcSurf  = NULL;
+    
+		if ( FAILED( pMainFrame->m_lpDDSBack->GetDC( &hdcSurf ) ) )	{
+			OutputDebugString( "Couldn't get a DC.\n");
+			pMainFrame->ReleaseObjects();
+			PostQuitMessage(0);
+			return ;
+		}
+
+		CBrush brush;
+		CBitmap bitmap;
+		bitmap.LoadBitmap (IDB_BITMAP);
+		brush.CreatePatternBrush (&bitmap);
+		bitmap.DeleteObject();
+
+		CDC * pDC  = CDC::FromHandle (hdcSurf);
+
+		pDC->SelectObject (&brush);
+
+		pDC->Rectangle (entry.m_nX - script.m_nMX,
+			       entry.m_nY - script.m_nMY,
+				   entry.m_nX - script.m_nMX + pFrame->m_nLen,
+				   entry.m_nY - script.m_nMY + pFrame->m_nHei);
+
+		// Release DC -- important
+		if (hdcSurf)
+			pMainFrame->m_lpDDSBack->ReleaseDC( hdcSurf );
+
+		OutputOBL3 ( filter[entry.m_nFrameNo], 
+			entry.m_nX - script.m_nMX , entry.m_nY - script.m_nMY , sizeSrc.cx, sizeSrc.cy, FALSE, 
+			NULL, 0);
+	}
+*/
+
+	CScr4editDoc *pDoc = GetDocument();
+	CGameFile3 & game = pDoc->m_game3; 
+<
+	if ((game.m_nScripts !=0) &&
+		(game[game.m_nCurrScript]->GetSize()!=0))
+	{
+		CScriptArray & script = * game[game.m_nCurrScript];
+		CScriptEntry & entry =  script[script.m_nCurrEntry];
+		COBL3Filter & filter = * game.m_arrOBL3[entry.m_nFrameSet];
+		
+		OutputOBL3 ( filter[entry.m_nFrameNo], 
+			entry.m_nX, entry.m_nY, 640, 480, FALSE, 
+			(UCHAR*)ddsurfdesc.lpSurface, ddsurfdesc.lPitch);
+
+
+
+if there is a script
+	if that script has at lease an entry
+		drawcurrent entry
+			

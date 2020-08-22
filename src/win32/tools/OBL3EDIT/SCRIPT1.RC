@@ -1,0 +1,847 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON25              ICON    DISCARDABLE     "jlangl.ico"
+IDI_ICON03              ICON    DISCARDABLE     "icon3.ico"
+ABC                     ICON    DISCARDABLE     "icon13.ico"
+IDI_ICON13              ICON    DISCARDABLE     "josiane_.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ACC1 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "+",            KEY_PLUS,               ASCII,  NOINVERT
+    "-",            KEY_MINUS,              ASCII,  NOINVERT
+    "1",            IDM_W1,                 VIRTKEY, NOINVERT
+    "2",            IDM_W2,                 VIRTKEY, NOINVERT
+    "3",            IDM_W3,                 VIRTKEY, NOINVERT
+    "4",            IDM_W4,                 VIRTKEY, NOINVERT
+    "5",            IDM_W5,                 VIRTKEY, NOINVERT
+    "6",            IDM_W6,                 VIRTKEY, NOINVERT
+    "7",            IDM_W7,                 VIRTKEY, NOINVERT
+    "8",            IDM_W8,                 VIRTKEY, NOINVERT
+    "=",            KEY_PLUS,               ASCII,  NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "V",            IDM_PASTE,              VIRTKEY, CONTROL, NOINVERT
+    VK_DELETE,      IDM_DELETE,             VIRTKEY, NOINVERT
+    VK_DOWN,        KEY_DOWN,               VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_SHIFTDN,            VIRTKEY, CONTROL, NOINVERT
+    VK_END,         KEY_END,                VIRTKEY, NOINVERT
+    VK_ESCAPE,      IDM_EXIT,               VIRTKEY, NOINVERT
+    VK_F4,          IDM_REDO,               VIRTKEY, NOINVERT
+    VK_HOME,        KEY_HOME,               VIRTKEY, NOINVERT
+    VK_LEFT,        KEY_LEFT,               VIRTKEY, NOINVERT
+    VK_LEFT,        IDM_SHIFTLF,            VIRTKEY, CONTROL, NOINVERT
+    VK_NUMPAD2,     KEY_DOWN,               VIRTKEY, NOINVERT
+    VK_NUMPAD4,     KEY_LEFT,               VIRTKEY, NOINVERT
+    VK_NUMPAD6,     KEY_RIGHT,              VIRTKEY, NOINVERT
+    VK_NUMPAD8,     KEY_UP,                 VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_PROPS,              VIRTKEY, ALT, NOINVERT
+    VK_RIGHT,       KEY_RIGHT,              VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_SHIFTRG,            VIRTKEY, CONTROL, NOINVERT
+    VK_UP,          KEY_UP,                 VIRTKEY, NOINVERT
+    VK_UP,          IDM_SHIFTUP,            VIRTKEY, CONTROL, NOINVERT
+    "X",            IDM_CUT,                VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON10              ICON    DISCARDABLE     "icon10.ico"
+IDI_ICON30              ICON    DISCARDABLE     "ico00005.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COLORPROP DIALOGEX 100, 100, 213, 145
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTROLPARENT
+CAPTION "Propriétés d'une couleur"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,121,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,134,120,50,14
+    SCROLLBAR       IDC_SCROLLRED,15,49,135,10
+    SCROLLBAR       IDC_SCROLLGREEN,15,70,136,10
+    SCROLLBAR       IDC_SCROLLBLUE,15,92,136,10
+    LTEXT           "ROUGE",IDC_STATIC,163,50,27,8
+    LTEXT           "VERT",IDC_STATIC,163,70,20,8
+    LTEXT           "BLEU",IDC_STATIC,163,95,20,8
+END
+
+IDD_APROPOSDE DIALOGEX 50, 50, 201, 195
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "OBL3 Editor Beta (évaluation seulement)"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,69,176,50,14
+    ICON            IDI_ICON10,IDC_STATIC,7,8,18,20
+    LTEXT           "Ce produit n'est disponible que pour des fins d'évaluations, toute utilisation commerciale ou à but lucratif non autorisée pourra résulter en des poursuites civiles ou criminelles.",
+                    IDC_STATIC,43,12,141,33
+    LTEXT           "Téléphone: 1-(514)-462-2755",IDC_STATIC,42,160,100,8
+    LTEXT           "Vous pouvez obtenir plus d'information en écrivant a:\n\nFrançois Blanchette\n3825 Bazin,\nBrossard Qc\nCanada\nJ4Z-2J3",
+                    IDC_STATIC,43,87,97,64
+    ICON            "ABC",IDC_STATIC,157,164,21,20
+    LTEXT           "Référez-vous au fichier LISEZMOI.TXT pour plus d'informations sur ce produit et\n les conditions d'utilisation de la version d'évaluation.",
+                    IDC_STATIC,43,49,152,34
+END
+
+IDD_ALERTE DIALOGEX 120, 80, 185, 92
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "AVERTISSEMENT"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Oui",IDOK,14,66,50,14
+    PUSHBUTTON      "&Non",IDNO,67,66,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,120,66,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,34,14,123,17
+    LTEXT           "Souhaitez-vous sauvegarder avant de quitter ?",
+                    IDC_STATIC2,34,37,91,20
+    ICON            IDI_ICON03,IDC_STATIC,7,13,18,20
+    CONTROL         103,IDC_STATIC,"Static",SS_BITMAP,135,47,23,15
+END
+
+IDD_KEYPROP DIALOGEX 0, 0, 289, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_KEYPROP"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_TRIGGERKEY,97,13,181,32,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_DISABLED | WS_VSCROLL | WS_TABSTOP,
+                    WS_EX_LEFTSCROLLBAR
+    PUSHBUTTON      "When touched",IDC_TOUCHED,99,38,87,14
+    PUSHBUTTON      "When Action Key",IDC_ACTIONKEY,99,56,87,14
+    PUSHBUTTON      "When Hurt",IDC_HURT,99,74,87,14
+    PUSHBUTTON      "When reborn",IDC_REBORN,192,74,87,14
+    PUSHBUTTON      "When dead",IDC_DEAD,192,56,87,14
+    PUSHBUTTON      "When Level Start",IDC_LEVELSTART,5,38,87,14
+    PUSHBUTTON      "When Level End",IDC_LEVELEND,5,56,87,14
+    PUSHBUTTON      "When Trigger Call",IDC_TRIGGERCALL,5,74,87,14
+    PUSHBUTTON      "When all goal collected",IDC_GOALSCOLLECTED,192,38,87,
+                    14
+    LTEXT           "Default trigger key",IDC_STATIC,13,14,70,8
+    PUSHBUTTON      "Define Trigger Keys",IDC_DEFINE,8,101,273,14
+END
+
+IDD_ITEMPROP DIALOG DISCARDABLE  0, 0, 291, 127
+STYLE DS_LOCALEDIT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_ITEMPROP"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ENAME,48,6,234,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_EREBIRTHTIME,49,26,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SREBIRTHTIME,"msctls_updown32",
+                    UDS_SETBUDDYINT | UDS_ALIGNRIGHT | UDS_AUTOBUDDY | 
+                    UDS_ARROWKEYS | UDS_NOTHOUSANDS,89,27,11,14
+    EDITTEXT        IDC_EJUMP,49,42,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SJUMP,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,88,43,11,14
+    EDITTEXT        IDC_EFIRERATE,49,58,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SFIRERATE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,59,11,14
+    EDITTEXT        IDC_ELIFEFORCE,49,74,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SLIFEFORCE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,76,11,14
+    EDITTEXT        IDC_ELIVES,49,90,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SLIVES,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,88,91,11,14
+    EDITTEXT        IDC_EOXYGEN,49,106,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SOXYGEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,89,108,11,14
+    EDITTEXT        IDC_EMOVE,145,28,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SMOVE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,184,28,11,14
+    EDITTEXT        IDC_EFALL,145,47,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SFALL,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,184,46,11,14
+    EDITTEXT        IDC_EASPEED,145,66,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SASPEED,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,65,11,14
+    EDITTEXT        IDC_ETIMEOUT,145,84,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_STIMEOUT,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,83,11,14
+    EDITTEXT        IDC_EDOMAGES,145,104,40,14,ES_WANTRETURN | ES_NUMBER
+    CONTROL         "Spin1",IDC_SDOMAGES,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,185,106,11,14
+    CONTROL         "Solide",IDC_CSOLID,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,29,35,10
+    CONTROL         "Deadly",IDC_CDEADLY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,41,38,10
+    CONTROL         "Kill player",IDC_CKILLPLAYER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,53,45,10
+    CONTROL         "Killed by Lava",IDC_CKILLBYLAVA,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,65,60,10
+    CONTROL         "Killed by water",IDC_CKILLBYWATER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,77,61,10
+    CONTROL         "Affected by gravity",IDC_CGRAVITY,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,198,89,75,10
+    CONTROL         "Can swim",IDC_CSWIM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,101,48,8
+    CONTROL         "Can jump",IDC_CJUMP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,198,111,45,10
+    LTEXT           "Durée avant rebirth",IDC_STATIC,8,24,41,17
+    LTEXT           "Hauteur saut",IDC_STATIC,8,41,33,17
+    LTEXT           "Freq. Tire",IDC_STATIC,8,63,38,8
+    LTEXT           "Énergie",IDC_STATIC,8,77,30,8
+    LTEXT           "Vies",IDC_STATIC,8,95,18,8
+    LTEXT           "Durée ""Time out""",IDC_STATIC,101,84,39,17
+    LTEXT           "Vitesse de movement",IDC_STATIC,101,26,39,16
+    LTEXT           "Vitesse de chute",IDC_STATIC,101,47,39,16
+    LTEXT           "Cause domages",IDC_STATIC,101,102,37,16
+    LTEXT           "Oxygène",IDC_STATIC,8,109,34,8
+    LTEXT           "Vitesse d'animation",IDC_STATIC,101,66,38,16
+    LTEXT           "Nom de l'objet",IDC_STATIC,8,6,38,17
+END
+
+IDD_INFOTEXT DIALOG DISCARDABLE  0, 0, 186, 167
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_INFOTEXT"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,67,148,50,14
+    EDITTEXT        IDC_EDIT,13,7,156,133,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+END
+
+IDD_IMAGESIZE DIALOG DISCARDABLE  100, 20, 144, 119
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dimension de l'image"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ELEN,78,41,40,14
+    CONTROL         "Spin1",IDC_SLEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,115,41,11,15
+    EDITTEXT        IDC_EHEI,78,60,40,14
+    CONTROL         "Spin1",IDC_SHEI,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,117,60,11,15
+    DEFPUSHBUTTON   "&OK",IDOK,9,97,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,82,97,50,14
+    LTEXT           "Largeur",IDC_STATIC,26,41,25,8
+    LTEXT           "Hauteur",IDC_STATIC,26,60,26,8
+    LTEXT           "Spécifier la dimension des images en tuiles 16x16. ",
+                    IDC_STATIC,13,9,109,21
+END
+
+IDD_GENERALINFO DIALOG DISCARDABLE  0, 0, 274, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_GENERALINFO"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EIMAGE,50,15,40,14
+    CONTROL         "Spin1",IDC_SIMAGE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,90,12,11,14
+    EDITTEXT        IDC_EU1,50,28,40,14
+    CONTROL         "Spin2",IDC_SU1,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,91,29,11,14
+    EDITTEXT        IDC_EU2,50,42,40,14
+    CONTROL         "Spin2",IDC_SU2,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,90,42,11,14
+    COMBOBOX        IDC_DC_CLASS,154,15,106,41,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_DISABLENOSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DC_SHOWAS,154,28,106,44,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_DISABLENOSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DC_ACTAS,154,42,106,44,CBS_DROPDOWN | 
+                    CBS_AUTOHSCROLL | CBS_SORT | CBS_DISABLENOSCROLL | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EINFO,7,75,251,53,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL | WS_HSCROLL
+    LTEXT           "Image par défaut",IDC_STATIC,10,14,34,16
+    LTEXT           "Classe",IDC_STATIC,109,19,22,8
+    LTEXT           "Affichage",IDC_STATIC,109,32,31,8
+    LTEXT           "Unused 1",IDC_STATIC,10,32,38,8
+    LTEXT           "Attributs",IDC_STATIC,109,46,36,8
+    LTEXT           "Unused 2",IDC_STATIC,10,45,38,8
+    LTEXT           "Copyrights et autres informations",IDC_STATIC,8,65,125,
+                    8
+    CONTROL         "Désactivé par défaut",IDC_CDISABLED,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,155,59,82,
+                    10
+END
+
+IDD_EVENTPROP DIALOGEX 0, 0, 309, 137
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "IDD_EVENTPROP"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_E_LIFEFORCE,54,10,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SLIFEFORCE,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,93,10,11,13
+    EDITTEXT        IDC_E_POINTS,54,25,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SPOINTS,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,92,26,11,13
+    EDITTEXT        IDC_E_OXYGEN,54,40,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SOXYGEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,93,41,11,13
+    COMBOBOX        IDC_DC_TRIGGER,54,55,103,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DC_CHANGETO,54,69,103,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_DC_PLAYERTO,54,82,103,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_TELEPORTTO,54,95,103,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Refresh Screen",IDC_C1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,13,65,10
+    CONTROL         "End Level",IDC_C2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    167,24,48,10
+    CONTROL         "Restart Level",IDC_C3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,35,58,10
+    CONTROL         "Kill Player",IDC_C4,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,46,46,10
+    CONTROL         "Time Stop",IDC_C5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    167,57,48,10
+    CONTROL         "Extra Life",IDC_C6,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,69,45,10
+    CONTROL         "Refresh screen",IDC_C7,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,80,63,10
+    CONTROL         "Invincibilité",IDC_C8,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,167,93,52,10
+    CONTROL         "Kill Others",IDC_C9,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,13,47,10
+    CONTROL         "Add to Inventory",IDC_C10,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,24,68,10
+    CONTROL         "Can Activate",IDC_C11,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,35,57,10
+    CONTROL         "Check12",IDC_C12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    240,46,46,10
+    CONTROL         "Invisibility",IDC_C13,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,57,45,10
+    CONTROL         "Flash screen",IDC_C14,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,240,69,57,10
+    CONTROL         "Check13",IDC_C15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    240,80,45,10
+    CONTROL         "Check15",IDC_C16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    240,93,45,10
+    LTEXT           "Life force",IDC_STATIC,8,12,30,8
+    LTEXT           "Points",IDC_STATIC,8,26,20,8
+    LTEXT           "Call trigger",IDC_STATIC,8,55,34,11
+    LTEXT           "Change To",IDC_STATIC,8,68,36,8
+    LTEXT           "Change Player to",IDC_STATIC,7,80,37,17
+    LTEXT           "Teleport to",IDC_STATIC,8,97,35,8
+    LTEXT           "Oxygene",IDC_STATIC,8,39,31,8
+    CONTROL         "-",IDC_CLIFEFORCE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    107,13,25,10
+    CONTROL         "-",IDC_CPOINTS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    107,27,50,10
+    CONTROL         "-",IDC_COXYGEN,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    108,42,50,10
+    PUSHBUTTON      "&OK",IDOK,7,115,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,247,116,50,14
+END
+
+IDD_BIGGER DIALOG DISCARDABLE  0, 0, 163, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Agrandir image/images"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,9,121,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,99,122,50,14
+    CONTROL         "Appliquer sur toutes les images",IDC_CALL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,12,54,113,10
+    LTEXT           "Définir les options désirées:",IDC_STATIC,11,10,86,8
+    CONTROL         "",IDC_CREDIM,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,12,
+                    68,8,8
+    LTEXT           "Redimensionner automatiquement les images impliquées",
+                    IDC_STATIC,25,67,110,19
+    EDITTEXT        IDC_EBIG,93,30,40,14,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "Spin1",IDC_SBIG,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,134,31,11,14
+    LTEXT           "Facteur d'augmentation",IDC_STATIC,11,32,75,8
+END
+
+IDD_SHOWOBL DIALOG DISCARDABLE  0, 0, 274, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_SHOWOBL"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,8,4,259,91
+    CONTROL         "x2",IDC_CX2,"Button",BS_AUTOCHECKBOX | NOT WS_VISIBLE | 
+                    WS_TABSTOP,54,121,45,10
+    EDITTEXT        IDC_EDIT,53,103,212,14,ES_AUTOHSCROLL
+    LTEXT           "Source",IDC_STATIC,9,104,24,8
+END
+
+IDD_INFO DIALOGEX 200, 150, 173, 86
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "INFORMATIONS"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&OK",IDOK,62,67,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,30,11,126,47,SS_NOPREFIX,WS_EX_TRANSPARENT
+    ICON            IDI_ICON30,IDC_STATIC,4,9,18,20
+    ICON            IDI_ICON25,IDC_STATIC,147,62,18,20
+    ICON            IDI_ICON13,IDC_STATIC,125,62,18,20,WS_GROUP
+END
+
+IDD_IMGPROPS DIALOG DISCARDABLE  0, 0, 231, 124
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_IMGPROPS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ELEN,68,28,39,14
+    CONTROL         "Spin1",IDC_SLEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,105,28,11,15
+    EDITTEXT        IDC_EHEI,68,47,40,14
+    CONTROL         "Spin1",IDC_SHEI,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,107,47,11,15
+    LTEXT           "Largeur",IDC_STATIC,16,28,25,8
+    LTEXT           "Hauteur",IDC_STATIC,16,47,26,8
+    CONTROL         "Rainbow effect",IDC_C1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,25,64,10
+    LTEXT           "Spécifier la dimension des images en tuiles 16x16. ",
+                    IDC_STATIC,13,6,109,21
+    CONTROL         "Full vertical shift",IDC_C2,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,36,66,10
+    CONTROL         "Full Horizontal shift",IDC_C3,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,135,47,75,10
+    CONTROL         "Check1",IDC_C4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,58,41,10
+    CONTROL         "Check2",IDC_C5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,69,41,10
+    CONTROL         "Check3",IDC_C6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,79,41,10
+    CONTROL         "Check4",IDC_C7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,90,41,10
+    CONTROL         "Check5",IDC_C8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    135,101,41,10
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau",                    IDM_NEW
+        MENUITEM "&Ouvrir",                     IDM_OPEN
+        MENUITEM "&Enregistrer",                IDM_SAVE
+        MENUITEM "En&registrer &sous...",       IDM_SAVEAS
+        MENUITEM SEPARATOR
+        MENUITEM "&Importer image",             IDM_IMPORT
+        MENUITEM "E&xporter image",             IDM_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    IDM_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler action\tCTRL-Z",     IDM_UNDO, GRAYED
+        MENUITEM "&Répéter action\tF4",         IDM_REDO, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Couper\tCTRL-X",              IDM_CUT
+        MENUITEM "Copier\tCTRL-V",              IDM_COPY
+        MENUITEM "Coller\tCTRL-C",              IDM_PASTE
+        MENUITEM "Effacer\tDEL",                IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Copier série",                IDM_COPYSET
+        MENUITEM "Coller série",                IDM_PASTESET
+        MENUITEM SEPARATOR
+        MENUITEM "Insérer",                     IDM_INSERT
+        MENUITEM "Supprimer",                   IDM_DELETE
+    END
+    POPUP "&Images"
+    BEGIN
+        MENUITEM "Image &précédente",           IDM_BACK
+        MENUITEM "Image &suivante",             IDM_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Flip &horizontal",            IDM_FLIPHORZ
+        MENUITEM "Flip &vertical",              IDM_FLIPVERT
+        MENUITEM "&Rotation 90'",               IDM_ROTATION90
+        MENUITEM "Inverser &couleurs",          IDM_INVERT
+        MENUITEM "&Agrandir image(s)",          IDM_BIGGER
+        MENUITEM "Effet Rai&nbow",              IDM_RAINBOW
+        MENUITEM "Re&dimensionner",             IDM_REDIM
+        MENUITEM SEPARATOR
+        MENUITEM "Pr&opriétés",                 IDM_PROPS
+    END
+    POPUP "&Outils"
+    BEGIN
+        MENUITEM "&Crayon",                     IDM_PEN, CHECKED
+        MENUITEM "&Remplir",                    IDM_FLOOD
+        MENUITEM "&Lignes",                     IDM_LINES
+        MENUITEM "Lignes &archées",             IDM_LINESARC
+        MENUITEM "C&ercles",                    IDM_CIRCLE
+        MENUITEM "Recta&ngle",                  IDM_RECT
+        MENUITEM "&Map attributs",              IDM_MAP
+        MENUITEM SEPARATOR
+        POPUP "&Trait"
+        BEGIN
+            MENUITEM "1",                           IDM_W1, CHECKED
+            MENUITEM "2",                           IDM_W2
+            MENUITEM "3",                           IDM_W3
+            MENUITEM "4",                           IDM_W4
+            MENUITEM "5",                           IDM_W5
+            MENUITEM "6",                           IDM_W6
+            MENUITEM "7",                           IDM_W7
+            MENUITEM "8",                           IDM_W8
+        END
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Palette de couleurs",        IDM_HASPALETTE, CHECKED
+        MENUITEM "Pre&view",                    IDM_HASPREVIEW, CHECKED
+        MENUITEM "M&ode édition",               IDM_EDITMODE, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "&Options",                    IDM_OPTIONS
+    END
+    POPUP "&?", HELP
+    BEGIN
+        MENUITEM "Documentation technique",     IDM_HELPTECH, HELP
+        MENUITEM "Éditeur",                     IDM_HELPEDIT
+        MENUITEM SEPARATOR
+        MENUITEM "À propos de ...",             IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FLOOD               CURSOR  DISCARDABLE     "flood.cur"
+IDC_PEN                 CURSOR  DISCARDABLE     "pen.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+IDB_TOOLBOX             BITMAP  DISCARDABLE     "bitmap2.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_GENERALINFO DLGINIT
+BEGIN
+    IDC_DC_CLASS, 0x403, 11, 0
+0x4142, 0x4b43, 0x5247, 0x554f, 0x444e, "\000" 
+    IDC_DC_CLASS, 0x403, 7, 0
+0x4c50, 0x5941, 0x5245, "\000" 
+    IDC_DC_CLASS, 0x403, 7, 0
+0x4d41, 0x4c55, 0x5445, "\000" 
+    IDC_DC_CLASS, 0x403, 8, 0
+0x5550, 0x504d, 0x494b, 0x004e, 
+    IDC_DC_SHOWAS, 0x403, 10, 0
+0x4e4f, 0x2d45, 0x5246, 0x4d41, 0x0045, 
+    IDC_DC_SHOWAS, 0x403, 11, 0
+0x554d, 0x544c, 0x4649, 0x4152, 0x454d, "\000" 
+    IDC_DC_SHOWAS, 0x403, 11, 0
+0x5942, 0x3420, 0x4720, 0x4f52, 0x5055, "\000" 
+    IDC_DC_ACTAS, 0x403, 17, 0
+0x4e41, 0x4954, 0x5247, 0x5641, 0x5449, 0x2d59, 0x5453, 0x504f, "\000" 
+    IDC_DC_ACTAS, 0x403, 5, 0
+0x5453, 0x504f, "\000" 
+    IDC_DC_ACTAS, 0x403, 6, 0
+0x5242, 0x4349, 0x004b, 
+    IDC_DC_ACTAS, 0x403, 6, 0
+0x4c53, 0x4d49, 0x0045, 
+    IDC_DC_ACTAS, 0x403, 6, 0
+0x4157, 0x4554, 0x0052, 
+    IDC_DC_ACTAS, 0x403, 11, 0
+0x4157, 0x4554, 0x2d52, 0x5453, 0x504f, "\000" 
+    IDC_DC_ACTAS, 0x403, 5, 0
+0x414c, 0x4156, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_COLORPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_APROPOSDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 187
+    END
+
+    IDD_ALERTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_KEYPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 282
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_ITEMPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 284
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_INFOTEXT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 160
+    END
+
+    IDD_IMAGESIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 137
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_GENERALINFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_EVENTPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 302
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 130
+    END
+
+    IDD_BIGGER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_SHOWOBL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 127
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_IMGPROPS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 117
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0c04b0"
+        BEGIN
+            VALUE "Comments", "Ce produit n'est disponible que pour des fins d'évaluations, toute utilisation commerciale ou à but lucratif non autorisée pourra résulter en des poursuites civiles ou criminelles.\0"
+            VALUE "CompanyName", " \0"
+            VALUE "FileDescription", "Éditeur graphique pour format OBL3\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Obl3Edit\0"
+            VALUE "LegalCopyright", "Copyright © 1997 François Blanchette\0"
+            VALUE "OriginalFilename", "Obl3Edit.exe\0"
+            VALUE "ProductName", "Statics System V3.0 Developpers' kit\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

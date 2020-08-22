@@ -1,0 +1,467 @@
+
+JAUNE ROUGE ORANGE
+JAUNE BLUE VERT
+
+ROUGE BLEU MAUVE
+ROUGE JAUNE ORANGE
+
+BLEU JAUNE VERT
+BLEU ROUGE MAUVE
+
+
+	// TODO: Add your command handler code here
+    CString l_strFilesFilter =
+        "All supported formats|*.obl;*.ima;*.mcx|"\
+        "Static Images (*.ima;*.mcx)|*.ima;*.mcx|"\
+        "OBL3/OBL4 Format|*.obl|"\
+        "|";
+
+    CFileDialog l_Dlg( TRUE,NULL,NULL, 
+            OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
+            l_strFilesFilter,  AfxGetMainWnd() ) ;
+
+    l_Dlg.m_ofn.lpstrTitle = "Import images"; 
+    
+    int iStatus = l_Dlg.DoModal(); 
+
+    if (iStatus==IDOK)
+    {
+		m_oblData.Extract (l_Dlg.GetPathName());
+		
+		RepaintAllViews();
+		SetModified();
+    }		
+
+
+	// TODO: Add your command handler code here
+    CString l_strFilesFilter =
+        "All supported formats|*.obl;*.ima;*.mcx|"\
+        "Static Images (*.ima;*.mcx)|*.ima;*.mcx|"\
+        "OBL3/OBL4 Format|*.obl|"\
+        "|";
+
+    CFileDialog l_Dlg( TRUE,NULL,NULL, 
+            OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT, 
+            l_strFilesFilter,  AfxGetMainWnd() ) ;
+
+    l_Dlg.m_ofn.lpstrTitle = "Insert file"; 
+    
+    int iStatus = l_Dlg.DoModal(); 
+
+    if (iStatus==IDOK)
+    {
+		COBL3Filter oblTemp;
+		oblTemp.Extract (l_Dlg.GetPathName());
+
+		int i;
+		for (i=0; oblTemp.GetSize(); i++)
+		{
+			m_oblData.InsertAt (m_oblData.m_nCurrFrame+i,
+				oblTemp[0]);
+			oblTemp.RemoveAt(0);
+		}
+
+		RepaintAllViews();
+		SetModified();
+    }		
+	
+
+
+
+
+			SetModifiedFlag(TRUE);
+
+
+
+		CString str = dlg.m_strFilename;
+		int i = str.Find (".obl");
+		if (i!=-1)
+			str.SetAt(i, 0) ;
+
+				strFilename.Format
+					("%s_split%d.obl", str, i+1);
+
+
+
+IDM_SPLIT_FRAMESET
+Export portion(s) of this file into others.
+Export portion(s) of this file into others.
+
+
+
+void CScr4editDoc::OnEditlocal() 
+{
+	// TODO: Add your command handler code here
+
+	CGameFile3 & game = m_game3; 
+	if ((game.m_nScripts !=0) &&
+		(game[game.m_nCurrScript]->GetSize()!=0)		
+		&& game[game.m_nCurrScript]->m_bSelection)	{
+
+		CScriptArray & script = * game[game.m_nCurrScript];
+		CScriptEntry & entry = script[script.m_nCurrEntry];
+
+		CDlgEditLocal dlg;
+		dlg.m_nSubClass = entry.m_nSubClass;
+		dlg.m_nTriggerKey = entry.m_nTriggerKey;
+		
+		CProto & proto = game.m_arrProto[entry.m_nProto];
+		dlg.m_strClass = game.m_arrClasses.StringFor(proto.m_nClass);
+		dlg.m_strObject = proto.m_szName;;
+
+		if (dlg.DoModal()==IDOK)
+		{
+			entry.m_nSubClass = dlg.m_nSubClass;
+			entry.m_nTriggerKey = dlg.m_nTriggerKey;
+			SetModifiedFlag (TRUE);
+			RepaintAllViews();
+		}
+	}	
+	
+	/*
+    CString l_strFilesFilter =
+        "Static V3.0 Scripts |*.scr"\
+        "|";
+
+	CFileDialog dlg( TRUE,NULL,NULL, 
+            OFN_HIDEREADONLY | OFN_OVERWRITEPROMPT
+			| OFN_EXPLORER, 
+            l_strFilesFilter,  AfxGetMainWnd() ) ;
+
+    dlg.m_ofn.lpstrTitle = "Read a script"; 
+	dlg.m_ofn.lpstrDefExt = ".scr";
+    
+    if (dlg.DoModal()==IDOK)  {
+
+		CString strFilename = dlg.GetFileName();
+
+		int nStatus = m_game3.Extract(strFilename);
+		int a=0;
+
+	}*/
+
+
+}
+
+void CScr4editDoc::OnUpdateEditlocal(CCmdUI* pCmdUI) 
+{
+	// TODO: Add your command update UI handler code here
+	CGameFile3 & game = m_game3; 
+	pCmdUI->Enable ((game.m_nScripts !=0) &&
+		(game[game.m_nCurrScript]->GetSize()!=0)		
+		&& game[game.m_nCurrScript]->m_bSelection);
+}
+
+	    // Erase the background
+	    DDBLTFX     ddbltfx;
+		ddbltfx.dwSize = sizeof( ddbltfx );
+		ddbltfx.dwFillColor = script.m_nBkColor; 
+    
+		if ( FAILED( pMainFrame->m_lpDDSBack->Blt( NULL, 
+				NULL, NULL, DDBLT_COLORFILL | DDBLT_WAIT, &ddbltfx ) ) )	
+		{	
+			OutputDebugString("DDraw: ColorFill failed\n");
+
+		}
+	
+
+
+
+					// pixel 2
+					xor eax,eax
+					mov al,[esi]
+					mov edx,eax
+					add eax,eax // 24bits = 3 bytes
+					add eax,edx
+					mov dl, [eax+ebx]
+					mov [edi], dl					
+					mov dl, [eax+ebx+1]
+					mov [edi+1], dl					
+					mov dl, [eax+ebx+2]
+					mov [edi+2], dl					
+
+					inc edi
+					inc edi
+					inc edi
+					inc esi
+
+					// pixel 3
+					xor eax,eax
+					mov al,[esi]
+					mov edx,eax
+					add eax,eax // 24bits = 3 bytes
+					add eax,edx
+					mov dl, [eax+ebx]
+					mov [edi], dl					
+					mov dl, [eax+ebx+1]
+					mov [edi+1], dl					
+					mov dl, [eax+ebx+2]
+					mov [edi+2], dl					
+
+					inc edi
+					inc edi
+					inc edi
+					inc esi
+
+	MSDOS_PAL24[0].red =0;
+	MSDOS_PAL24[0].green=0;
+	MSDOS_PAL24[0].blue =0;
+	MSDOS_PAL24[255].red =255;
+	MSDOS_PAL24[255].green=255;
+	MSDOS_PAL24[255].blue =255;
+	
+
+
+if (m_nBpp==16)
+		{
+			icolor = GetRGBValue (rgb);
+		}
+		else
+		{
+			static b=1;
+			if (b)
+			{
+				b=0;
+				OutputDebugString("Not 16bpp\n");
+			}
+		}
+
+
+	{
+
+		for (cpt=0; cpt<0xf0; cpt++)
+		{
+               
+           red= (MSDOS_PAL[cpt].red/2) ;                                              
+           green= (MSDOS_PAL[cpt].green/2)  ;                        
+           blue= (MSDOS_PAL[cpt].blue/2) ;          
+		   
+           
+		   
+		   MSDOS_PAL16[cpt+0x10] = icolor;             
+
+           MSDOS_PAL24[cpt+0x10].red = MSDOS_PAL[cpt].red*4;
+           MSDOS_PAL24[cpt+0x10].blue = MSDOS_PAL[cpt].blue*4;
+           MSDOS_PAL24[cpt+0x10].green = MSDOS_PAL[cpt].green*4;
+
+           MSDOS_PAL32[cpt+0x10] = 
+				65536* MSDOS_PAL[cpt].red*4 +
+				1* MSDOS_PAL[cpt].blue*4 +
+				256 *  MSDOS_PAL[cpt].green*4;	
+		}	
+
+	}
+
+
+	DDPIXELFORMAT ddPixelFormat;
+	ZeroMemory (&ddPixelFormat, sizeof (ddPixelFormat));	
+
+	ddPixelFormat.dwSize = sizeof (ddPixelFormat);
+	ddPixelFormat.dwFlags = DDPF_PALETTEINDEXED8  ;
+	ddPixelFormat.dwRGBBitCount = 8;
+	ddPixelFormat.dwRBitMask = 0xff;
+	ddPixelFormat.dwGBitMask = 0xff00;
+	ddPixelFormat.dwBBitMask = 0xff0000;
+
+	//ddsd.ddpfPixelFormat = ddPixelFormat;
+
+	OutputDebugString ("C\n");
+
+	LPDIRECTDRAWPALETTE lpDDPalette;
+	CClientDC dc(pMainFrame);
+
+	if ( pMainFrame->CreatePalette(&dc, 
+						  pMainFrame->m_lpDD,
+						  &lpDDPalette  )==FALSE)
+	{
+		OutputDebugString ("IMPORTBITMAP: Couldn't create the palette\n");
+		return FALSE;
+	}
+
+    if ( FAILED( pdds->SetPalette( lpDDPalette ) ) )
+	{
+		OutputDebugString ( "IMPORTBITMAP: Couldnt' get and/or set the palette.\n" );
+        return FALSE;
+    }
+
+
+	if (pdds == NULL || pdds->
+			Lock(NULL, &ddsd, DDLOCK_SURFACEMEMORYPTR | DDLOCK_WAIT, NULL) !=DD_OK)
+	{
+			OutputDebugString("IMPORTBITMAP: Lock failed!\n");
+			return FALSE;
+	}
+
+	UCHAR *pDest = (UCHAR*) ddsd.lpSurface;
+	int nPitch = ddsd.lPitch;
+
+			nColor = * (pDest+x + y * nPitch);
+
+			/*
+
+	if ( lpDDPalette != NULL ) 
+	{
+		lpDDPalette->Release();
+        lpDDPalette = NULL;
+    }
+    
+	//return pdds;
+
+	bFirst = FALSE;
+
+
+
+
+		if 	(((pFrame->m_nHei - m_nMY)<nRows) ||
+			((pFrame->m_nLen - m_nMX)<nCols))
+		{
+			int nFillSize = rectSize.cy* rectSize.cx/4;
+			_asm {
+				mov edi, pBitmap
+				mov ecx, nFillSize
+				mov eax, 0x2f2f2f2f
+				mov edx,4
+_loop:
+				mov [edi], eax
+				add edi,edx
+				dec ecx
+				or ecx,ecx
+				jne _loop
+
+			}
+		}
+
+
+		for (yy=0; yy<min( nRows, pFrame->m_nHei - m_nMY) ; yy++)
+		{
+
+			char *s= pFrame->m_pBitmap + m_nMX+
+						+ (m_nMY+yy)*pFrame->m_nLen;
+			char *d= pBitmap + 
+							( yy*8*rectSize.cx);
+
+			
+			for (xx=0; xx< min(nCols, pFrame->m_nLen - m_nMX); xx++)
+			{
+
+					if (((yy+m_nMY)%8==7) || ((xx+m_nMX)%8==7))
+						c = 0x40;
+					else
+						c= 0x30;
+
+					//if (*s !=0)
+					_asm {
+
+						push edx
+						push eax
+						push ebx
+						push edi
+						push esi
+
+						mov ecx,4
+
+						mov esi, s
+						mov dh, [esi]
+						mov dl, c
+						shl edx,16
+						mov dl, [esi]
+						mov dh, dl
+
+						mov ax,dx
+						shl eax,16
+						mov ax,dx						
+
+						mov edi, d
+						mov ebx, l
+						
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						add edi,ebx
+						mov [edi], eax
+						mov [edi+ecx],edx
+						
+						add edi,ebx
+						mov al, c
+						mov ah,al
+						shl eax,16
+						mov al,c
+						mov ah,al
+						mov [edi], eax
+						mov [edi+ecx],eax
+					
+						pop esi
+						pop edi
+						pop ebx
+						pop eax
+						pop edx
+					}
+
+				d=d+8;
+				s++;
+
+			}
+		}
+
+	  }
+
+	// Start of code snippet 100% by Frank B.
+
+	DDSURFACEDESC ddsurfdesc;
+	ddsurfdesc.dwSize = sizeof(DDSURFACEDESC);
+	ddsurfdesc.dwFlags = DDSD_ALL;
+
+	int nStatus = pMainFrame->m_lpDDSPrimary->GetSurfaceDesc(&ddsurfdesc);
+	if (nStatus!=DD_OK) 
+		OutputDebugString("Not ok!");
+
+	if (pMainFrame->m_lpDDSPrimary->
+		Lock(NULL, &ddsurfdesc, DDLOCK_SURFACEMEMORYPTR | DDLOCK_WAIT, NULL) !=DD_OK)
+	{
+		OutputDebugString("Lock failed!");
+		pMainFrame->ReleaseObjects();
+		PostQuitMessage(0);
+	}
+
+	int x;
+	int y;
+	for (y=0; y<256; y++)
+	{
+		for (x=0; x<256; x++)
+		{
+			* ( (char*) ddsurfdesc.lpSurface + x+ y* ddsurfdesc.lPitch) = (char)y;
+		}
+
+	}
+
+	if (pMainFrame->m_lpDDSPrimary->
+		Unlock(pMainFrame->m_lpDDSPrimary))
+	{
+		OutputDebugString("Unlock failed!");
+		pMainFrame->ReleaseObjects();
+		PostQuitMessage(0);
+	}
+
+
+
+
+	if (rectSize.cx %4)
+		rectSize.cx=rectSize.cx + ( 4- rectSize.cx %4);
+
+	if (rectSize.cy %8)
+		rectSize.cy=rectSize.cy + ( 8- rectSize.cy %8);;
+

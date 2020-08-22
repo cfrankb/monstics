@@ -1,0 +1,913 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_OBL4EDTYPE          ICON    DISCARDABLE     "res\\obl4editDoc.ico"
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\obl4edit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    SEPARATOR
+    BUTTON      IDM_PEN
+    BUTTON      IDM_FLOOD
+    BUTTON      IDM_LINES
+    BUTTON      IDM_LINESARC
+    BUTTON      IDM_CIRCLE
+    BUTTON      IDM_RECT
+    BUTTON      IDM_SELECT
+    BUTTON      IDM_COLORSELECT
+    SEPARATOR
+    BUTTON      IDM_MAP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        POPUP "Import images"
+        BEGIN
+            MENUITEM "OBL4 sets",                   IDM_IMPORTOBL
+            MENUITEM "RGB Bitmap",                  IDM_IMPORTWINDOWBITMAP
+            MENUITEM "Game Maker 3.0",              IDM_IMPORTGAMEMAKER
+        END
+        POPUP "Export images"
+        BEGIN
+            MENUITEM "OBL4 Sets",                   IDM_SPLIT_FRAMESET
+            MENUITEM "RGB Bitmaps",                 IDM_EXPORTBMP
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Load palette",                IDM_LOADPALETTE
+        MENUITEM "Save palette",                IDM_SAVEPALETTE
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl-Y",               IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                IDM_CUT
+        MENUITEM "&Copy\tCtrl+C",               IDM_COPY
+        MENUITEM "&Paste\tCtrl+V",              IDM_PASTE
+        MENUITEM "Clear\tDEL",                  IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "Copy set",                    IDM_COPYSET
+        MENUITEM "Paste set",                   IDM_PASTESET
+    END
+    POPUP "&Images"
+    BEGIN
+        MENUITEM "&Previous\tF3",               IDM_BACK
+        MENUITEM "&Next image\tF4",             IDM_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Duplicate\tF6",              IDM_DUPLICATE
+        MENUITEM "Flip &horizontal",            IDM_FLIPHORZ
+        MENUITEM "Flip &vertical",              IDM_FLIPVERT
+        MENUITEM "&Rotation 90'",               IDM_ROTATION90
+        MENUITEM "Inverse &colors",             IDM_INVERT
+        MENUITEM "Re&size Image",               IDM_RESIZE
+        POPUP "Spr&ead image"
+        BEGIN
+            MENUITEM "En&large 2x",                 IDM_ENLARGE
+            MENUITEM "Spread Horz",                 IDM_SPREADHORZ
+            MENUITEM "Spread Vert",                 IDM_SPREADVERT
+        END
+        MENUITEM "Shrin&k the image",           IDM_SHRINK
+        MENUITEM "Rain&bow effect\tF7",         IDM_RAINBOW
+        MENUITEM SEPARATOR
+        MENUITEM "Insert image",                IDM_INSERT
+        MENUITEM "Delete image",                IDM_DELETE
+    END
+    POPUP "&Tools"
+    BEGIN
+        MENUITEM "&Drawing Pen",                IDM_PEN
+        MENUITEM "&Flood Fill",                 IDM_FLOOD
+        MENUITEM "&Lines",                      IDM_LINES
+        MENUITEM "Lines &arcs",                 IDM_LINESARC
+        MENUITEM "C&ircles",                    IDM_CIRCLE
+        MENUITEM "Recta&ngles",                 IDM_RECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Color Select",               IDM_COLORSELECT
+        MENUITEM "&Selection",                  IDM_SELECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Map attributs",              IDM_MAP
+        MENUITEM SEPARATOR
+        POPUP "&Pen Size"
+        BEGIN
+            MENUITEM "1",                           IDM_W1
+            MENUITEM "2",                           IDM_W2
+            MENUITEM "3",                           IDM_W3
+            MENUITEM "4",                           IDM_W4
+            MENUITEM "5",                           IDM_W5
+            MENUITEM "6",                           IDM_W6
+            MENUITEM "7",                           IDM_W7
+            MENUITEM "8",                           IDM_W8
+        END
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Edit Mode\tF5",              IDM_EDITMODE
+        MENUITEM "Edit &Zoom",                  IDM_EDITZOOM
+        MENUITEM "T&apestry",                   IDM_TAPESTRY
+        MENUITEM SEPARATOR
+        MENUITEM "Isometric grid",              IDM_ISOMETRICGRID
+        MENUITEM "Transparency",                IDM_SHOWTRANSPARENCY
+        MENUITEM "&Preview",                    IDM_SHOWPREVIEW
+        MENUITEM SEPARATOR
+        MENUITEM "Gamma correction\tF11",       IDM_ADJUSTGAMMA
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Save settings",              IDM_SAVESETTINGS, CHECKED
+    END
+    POPUP "&?", HELP
+    BEGIN
+        MENUITEM "&About obl4edit...",          ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "+",            IDM_PLUS,               ASCII,  NOINVERT
+    "-",            IDM_MINUS,              ASCII,  NOINVERT
+    "1",            IDM_W1,                 VIRTKEY, NOINVERT
+    "2",            IDM_W2,                 VIRTKEY, NOINVERT
+    "3",            IDM_W3,                 VIRTKEY, NOINVERT
+    "4",            IDM_W4,                 VIRTKEY, NOINVERT
+    "5",            IDM_W5,                 VIRTKEY, NOINVERT
+    "6",            IDM_W6,                 VIRTKEY, NOINVERT
+    "7",            IDM_W7,                 VIRTKEY, NOINVERT
+    "8",            IDM_W8,                 VIRTKEY, NOINVERT
+    "=",            IDM_PLUS,               ASCII,  NOINVERT
+    "C",            IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "U",            IDM_UNDO,               VIRTKEY, NOINVERT
+    "V",            IDM_PASTE,              VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        IDM_UNDO,               VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      IDM_CLEAR,              VIRTKEY, NOINVERT
+    VK_DELETE,      IDM_CUT,                VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        IDM_SHIFTDN,            VIRTKEY, NOINVERT
+    VK_F11,         IDM_ADJUSTGAMMA,        VIRTKEY, NOINVERT
+    VK_F3,          IDM_BACK,               VIRTKEY, NOINVERT
+    VK_F4,          IDM_NEXT,               VIRTKEY, NOINVERT
+    VK_F5,          IDM_ZOOMZOOM,           VIRTKEY, NOINVERT
+    VK_F6,          IDM_DUPLICATE,          VIRTKEY, NOINVERT
+    VK_F7,          IDM_RAINBOW,            VIRTKEY, NOINVERT
+    VK_F7,          IDM_RAINBOW_EXCLUDE,    VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      IDM_COPY,               VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      IDM_PASTE,              VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        IDM_SHIFTLF,            VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_SHIFTRG,            VIRTKEY, NOINVERT
+    VK_UP,          IDM_SHIFTUP,            VIRTKEY, NOINVERT
+    "Y",            IDM_REDO,               VIRTKEY, CONTROL, NOINVERT
+    "Z",            IDM_UNDO,               VIRTKEY, CONTROL, NOINVERT
+    "_",            IDM_MINUS,              ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 172, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About this program..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,10,21,20
+    LTEXT           "Object Blocks Editor 4.0",IDC_STATIC,35,7,95,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1999\nFrancois Blanchette\nAll rights reserved.",
+                    IDC_STATIC,36,18,94,24
+    DEFPUSHBUTTON   "OK",IDOK,133,7,32,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "This demo/promo/evaluation copy cannot sold or distributed without prior authorization from Francois Blanchette.\0"
+            VALUE "CompanyName", "(undefined key)\0"
+            VALUE "FileDescription", "Object Blocks Editor 4.0\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "OBL4EDIT\0"
+            VALUE "LegalCopyright", "Copyright © 1998 François Blanchette\0"
+            VALUE "OriginalFilename", "OBL4EDIT.EXE\0"
+            VALUE "ProductName", "Static System V4.0 For Windows 95/98/NT\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 165
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 42
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_FLOOD               CURSOR  DISCARDABLE     "res\\flood.cur"
+IDC_COLORSELECT         CURSOR  DISCARDABLE     "res\\colorsel.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "obl4edit\n\nObl4edit\nOBL4 Files (*.obl)\n.OBL\nObl4edit.Document\nObl4edit Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "obl4edit"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LINES               "Draw lines with the ruler\nLines"
+    IDM_W1                  "Set the drawing pen width to 1\nWidth 1"
+    IDM_W2                  "Set the drawing pen width to 2\nWidth 2"
+    IDM_W3                  "Set the drawing pen width to 3\nWidth 3"
+    IDM_W4                  "Set the drawing pen width to 4\nWidth 4"
+    IDM_W5                  "Set the drawing pen width to 5\nWidth 5"
+    IDM_W6                  "Set the drawing pen width to 6\nWidth 6"
+    IDM_W7                  "Set the drawing pen width to 7\nWidth 7"
+    IDM_W8                  "Set the drawing pen width to 8\nWidth 8"
+    IDM_CIRCLE              "Use this tool to draw circles\nCircles"
+    IDM_LINESARC            "Line-arc allows you to draw several lines from a single origin\nLines Arc"
+    IDM_RECT                "Draw rectangles and squares\nRectangles"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PROPS               "Show or modify object properties\nProperties"
+    IDM_MAP                 "Mysterious enimatic MAPING MODE\nMapping mode"
+    IDM_EDITMODE            "Edit the image normal viewing\nEdit Mode"
+    IDM_HASPREVIEW          "Show or hide the instant preview\nPreview"
+    IDM_PEN                 "The regular pen draws one pixel at a time\nPen"
+    IDM_FLOOD               "Floodfill allowz you fill large section quickly\nFlood fill"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_ZOOM                "Un-Zoom/Zoom image\nZoom"
+    IDM_IMPORT              "Append another frame set to this one.\nImport images"
+    IDM_EXPORT              "Insert another file at current position\nInsert file"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_UNDO                "Undo the last action\nUndo"
+    IDM_REDO                "Redo the last action\nRedo"
+    IDM_RESIZE              "Resize one or images\nResize images"
+    IDM_COLORSELECT         "Select a color from the image\nColor select"
+    IDM_ENLARGE             "Increase the size by a factor of 2.\nEnlarge"
+    IDM_EDITZOOM            "Edit the image in x8 Zoom\nZoom"
+    IDM_TAPESTRY            "Move to preview tapestry mode\nTapestry"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_HASPALETTE          "Show or hide the color palette\nColor Palette"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_OPTIONS             "Show or modify application's options\nOptions"
+    IDM_RAINBOW             "Increase every non-transparent color by 1.\nRainbow"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_BACK                "Goto previous image\nPrevious image"
+    IDM_NEXT                "Goto next image\nNext image"
+    IDM_FLIPHORZ            "Perform horizontal flip on current image\nFlip horizontal"
+    IDM_FLIPVERT            "Perform vertical flip on current image\nFlip vertical"
+    IDM_ROTATION90          "Perform a 90' rotation\nRotation 90'"
+    IDM_INVERT              "Inverse image colors\nInverse Colors"
+    IDM_BIGGER              "Resize one or more image(s)\nResize images"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_DELETE              "Delete the current image\nDelete Image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PASTESET            "Paste a set of images"
+    IDM_INSERT              "Insert another image\nInsert image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_CLEAR               "Clear the entire image \nClear image"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_FRAMECOUNTER        "Show or hide the annoying frame counter\nFrame counter"
+    IDM_SHOWPREVIEW         "Show or hide the preview window\nPreview"
+    IDM_SELECT              "Select a portion of the image in preparation for copy\nSelect"
+    IDM_DUPLICATE           "Insert a duplicate after this image\nDuplicate"
+    IDM_SAVESETTINGS        "Save and restore the settings from session to session."
+    IDM_CUT                 "Cut the selection and put it on the Clipboard\nCut"
+    IDM_COPY                "Copy the selection and put it on the Clipboard\nCopy"
+    IDM_PASTE               "Insert Clipboard contents\nPaste"
+    IDM_INSERTFILE          "Insert another frame set at the current position\nInsert file"
+    IDM_SPLIT_FRAMESET      "Export portion(s) of this file into others."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_SPREADHORZ          "Repeate the image to double it's length\nSpread horizontally"
+    IDM_SPREADVERT          "Repeate the image to double it's height\nSpread vertically"
+    IDM_IMPORTWINDOWBITMAP  "Import a  windows .BMP file either a 256, 64K or 16M colors."
+    IDM_IMPORTGAMEMAKER     "Import blocks from a Game Maker 3.0 file."
+    IDM_SAVEPALETTE         "Save the current palette in an exportable file."
+    IDM_LOADPALETTE         "Load a DOS palette into the program."
+    IDM_SHOWTRANSPARENCY    "Hi-lite the transparent color on the edition grild"
+    IDM_SHIRNK              "Reduce the size of the image by a factor of 2.\nShirnk"
+    IDM_SHRINK              "Reduce the image by a factor of 2.\nShrink image"
+    IDM_EXPORTBMP           "Export images as Windows RGB 16M bitmaps"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_IMPORTIMAGES_OBL4SETS 
+                            "Import one or more OBL4 frame sets into this one."
+    IDM_IMPORTOBL           "Import one or more OBL4 frame sets."
+    IDM_ADJUSTGAMMA         "Adjust the gamma for compatibility with all video cards."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CG_IDR_POPUP_OBL4EDIT_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               IDM_UNDO
+        MENUITEM "&Redo\tCtrl-Y",               IDM_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                IDM_CUT
+        MENUITEM "&Copy\tCtrl+C",               IDM_COPY
+        MENUITEM "&Paste\tCtrl+V",              IDM_PASTE
+        MENUITEM "Clear\tDEL",                  IDM_CLEAR
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous\tF3",               IDM_BACK
+        MENUITEM "&Next image\tF4",             IDM_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "&Duplicate\tF6",              IDM_DUPLICATE
+        MENUITEM SEPARATOR
+        MENUITEM "Insert image",                IDM_INSERT
+        MENUITEM "Delete image",                IDM_DELETE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_IMAGESIZE DIALOG DISCARDABLE  100, 20, 138, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Size"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Each dimensions is multiplied by 8 to obtain the actual image size (in pixels).",
+                    IDC_STATIC,13,7,109,26
+    LTEXT           "Lenght",IDC_STATIC,23,39,25,8
+    EDITTEXT        IDC_ELEN,68,36,40,14
+    CONTROL         "Spin1",IDC_SLEN,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,115,41,11,15
+    LTEXT           "Height",IDC_STATIC,23,60,26,8
+    EDITTEXT        IDC_EHEI,68,57,40,14
+    CONTROL         "Spin1",IDC_SHEI,"msctls_updown32",UDS_SETBUDDYINT | 
+                    UDS_ALIGNRIGHT | UDS_AUTOBUDDY | UDS_ARROWKEYS | 
+                    UDS_NOTHOUSANDS,117,60,11,15
+    CONTROL         "Resize all the images",IDC_CALL,"Button",
+                    BS_AUTOCHECKBOX | NOT WS_VISIBLE | WS_TABSTOP,29,80,82,
+                    10
+    DEFPUSHBUTTON   "&OK",IDOK,7,102,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,80,102,50,14
+END
+
+IDD_SPLITDLG DIALOG DISCARDABLE  0, 0, 205, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "OBL4 Export Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select the appropriate settings then click OK to apply the exportation of the image subset.",
+                    IDC_STATIC,7,7,173,17
+    LTEXT           "Base file name for destination",IDC_STATIC,9,29,93,8
+    EDITTEXT        IDC_EFILENAME,8,39,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BROWSE,145,39,50,14
+    CONTROL         "Split to each ",IDC_RSPLIT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,63,57,10
+    COMBOBOX        IDC_CSIZE,74,60,48,69,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Range",IDC_REXTRACT,"Button",BS_AUTORADIOBUTTON,8,79,37,
+                    10
+    COMBOBOX        IDC_CFROM,74,79,48,64,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CTO,149,79,48,62,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,7,101,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,147,101,50,14
+    LTEXT           "TO",IDC_STATIC,130,82,11,8
+END
+
+IDD_IMPORTBMP DIALOG DISCARDABLE  0, 0, 146, 133
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ".BMP Import options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Filename",IDC_STATIC,7,7,29,8
+    EDITTEXT        IDC_EFILENAME,7,17,131,14
+    PUSHBUTTON      "&Browse",IDC_BBROWSE,89,33,50,14
+    LTEXT           "Select an import method below...",IDC_STATIC,7,54,104,8
+    CONTROL         "Palette color matching",IDC_RMETHOD1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,23,70,86,10
+    CONTROL         "Approximation matching",IDC_RMETHOD2,"Button",
+                    BS_AUTORADIOBUTTON,23,82,91,10
+    CONTROL         "GDI color matching (fastest)",IDC_RMETHOD3,"Button",
+                    BS_AUTORADIOBUTTON,23,94,106,10
+    DEFPUSHBUTTON   "OK",IDOK,7,112,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,89,112,50,14
+END
+
+IDD_EXPORTBMP DIALOG DISCARDABLE  0, 0, 204, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bitmaps Export Options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select the appropriate settings then click OK to apply the exportation of the image subset.",
+                    IDC_STATIC,7,7,188,20
+    LTEXT           "Base file name for destination",IDC_STATIC,9,29,93,8
+    EDITTEXT        IDC_EFILENAME,7,39,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BROWSE,145,39,50,14
+    LTEXT           "Images to be exported...",IDC_STATIC,7,58,77,8
+    CONTROL         "All Images",IDC_RALL,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,71,57,10
+    CONTROL         "Range",IDC_REXTRACT,"Button",BS_AUTORADIOBUTTON,7,82,37,
+                    10
+    COMBOBOX        IDC_CFROM,73,82,48,64,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "TO",IDC_STATIC,129,85,11,8
+    COMBOBOX        IDC_CTO,149,82,48,62,CBS_DROPDOWNLIST | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "Export",IDOK,89,106,50,14,WS_DISABLED
+    PUSHBUTTON      "Cancel",IDCANCEL,147,106,50,14
+END
+
+IDD_PASTEBMP DIALOG DISCARDABLE  0, 0, 186, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Pasting a bitmap from the clipboard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+    LTEXT           "Select an import method below...",IDC_STATIC,7,7,104,8
+    CONTROL         "Palette color matching",IDC_RMETHOD1,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,23,23,86,10
+    CONTROL         "Approximation matching",IDC_RMETHOD2,"Button",
+                    BS_AUTORADIOBUTTON,23,35,91,10
+    CONTROL         "GDI color matching (fastest)",IDC_RMETHOD3,"Button",
+                    BS_AUTORADIOBUTTON,23,47,106,10
+END
+
+IDD_IMPORTOBL DIALOG DISCARDABLE  0, 0, 205, 127
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION ".OBL Import options"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Select the appropriate settings then click OK to apply the importation of  .OBL4 frame sets.",
+                    IDC_STATIC,9,7,173,17
+    LTEXT           "File(s) specification to be imported",IDC_STATIC,11,29,
+                    112,8
+    EDITTEXT        IDC_EFILENAME,11,39,132,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BROWSE,147,39,50,14
+    GROUPBOX        "Import mode",IDC_STATIC,11,59,187,39
+    CONTROL         "Append to this set",IDC_RAPPEND,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,27,70,73,10
+    CONTROL         "Insert before current image",IDC_RINSERT,"Button",
+                    BS_AUTORADIOBUTTON,27,82,100,10
+    DEFPUSHBUTTON   "OK",IDOK,7,106,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,148,106,50,14
+END
+
+IDD_EXPORTPAL DIALOG DISCARDABLE  0, 0, 186, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Filename",IDC_STATIC,7,7,29,8
+    EDITTEXT        IDC_ENAME,7,17,109,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BBROWSE,129,17,50,14
+    GROUPBOX        "Export format",IDC_FORMATGROUP,7,35,172,38,WS_GROUP
+    CONTROL         "MS-DOS RGB (Game Maker compliant)",IDC_RMSDOS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,47,140,10
+    CONTROL         "Jasc Palette (PSP compliant)",IDC_RJASC,"Button",
+                    BS_AUTORADIOBUTTON,15,57,107,10
+    DEFPUSHBUTTON   "Export",IDOK,71,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,77,50,14
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_IMAGESIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 131
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_SPLITDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_IMPORTBMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 139
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_EXPORTBMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 197
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PASTEBMP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 59
+    END
+
+    IDD_IMPORTOBL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_EXPORTPAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_PEN                 CURSOR  DISCARDABLE     "res\\pen.cur"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\obl4edit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\obl4edit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

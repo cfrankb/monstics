@@ -1,0 +1,131 @@
+		for (yy=0; yy<nRows; yy++)
+		{
+
+			s= pFrame->Point(0 ,yy);
+			d = (UCHAR*) ddsurfdesc.lpSurface+(y+yy)*l +x;
+
+			if (bClear)
+			{
+
+				_asm 
+				{
+					push eax
+					push ecx
+					push edx
+					push edi
+					push esi
+					
+					mov ecx, nCols
+					mov esi, s
+					mov edi, d
+					mov edx,4
+
+_loop:				cmp ecx,edx
+					jb _Out
+					mov eax, [esi]
+					mov [edi], eax
+
+					add edi,edx
+					add esi,edx
+
+					sub ecx, edx
+					or ecx,ecx
+					jne _loop
+
+_Out:				pop esi
+					pop edi
+					pop edx
+					pop ecx
+					pop eax
+				
+				}
+			}
+
+			else
+			{
+				_asm
+				{	
+					push eax
+					push ecx
+					push edx
+					push edi
+					push esi
+					
+					mov ecx, nCols
+					mov esi, s
+					mov edi, d
+					mov edx,4
+
+_loop_:				cmp ecx,edx
+					jb _Out_
+					mov eax, [esi]
+					or eax,eax
+					je zero
+
+					mov ebx, [edi]
+					cmp eax,ebx 
+					je zero
+
+					or ax,ax
+					je zero1
+
+					or al,al
+					jne zero2			
+					mov al,bl
+
+zero2:				or ah,ah
+					jne zero3
+					mov ah,bh
+
+zero3:				mov [edi],ax
+
+zero1:				shr eax,16
+					shr ebx,16
+
+					inc esi
+					inc esi
+					inc edi
+					inc edi
+
+					or ax,ax
+					je zero1a
+
+					or al,al
+					jne zero2a			
+					mov al,bl
+
+zero2a:				or ah,ah
+					jne zero3a
+					mov ah,bh
+
+zero3a:				mov [edi],ax
+
+zero1a:				dec esi
+					dec esi
+					dec edi
+					dec edi
+
+zero:
+					add edi,edx
+					add esi,edx
+
+					sub ecx, edx
+					or ecx,ecx
+					jne _loop_
+
+_Out_:				pop esi
+					pop edi
+					pop edx
+					pop ecx
+					pop eax		
+
+				
+				} // asm
+
+			} // else
+
+		} // for
+	}
+	else 
+	{
+	}

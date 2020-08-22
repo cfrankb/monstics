@@ -1,0 +1,387 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON13              ICON    DISCARDABLE     "josiane_.ico"
+IDI_ICON01              ICON    DISCARDABLE     "icon1.ico"
+IDI_ICON03              ICON    DISCARDABLE     "icon3.ico"
+IDI_ICON23              ICON    DISCARDABLE     "jlangl.ico"
+IDI_ICON24              ICON    DISCARDABLE     "sophie_b.ico"
+IDI_ICON22              ICON    DISCARDABLE     "jjean.ico"
+IDI_ICON02              ICON    DISCARDABLE     "ico00001.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral (Default) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_DEFAULT
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+ACC1 ACCELERATORS MOVEABLE PURE 
+BEGIN
+    "1",            IDM_1x,                 VIRTKEY, NOINVERT
+    "2",            IDM_2x,                 VIRTKEY, NOINVERT
+    "4",            IDM_4x,                 VIRTKEY, NOINVERT
+    "8",            IDM_8x,                 VIRTKEY, NOINVERT
+    VK_DOWN,        KEY_DN,                 VIRTKEY, NOINVERT
+    VK_END,         KEY_END,                VIRTKEY, NOINVERT
+    VK_ESCAPE,      IDM_QUIT,               VIRTKEY, NOINVERT
+    VK_HOME,        KEY_HOME,               VIRTKEY, NOINVERT
+    VK_LEFT,        KEY_LF,                 VIRTKEY, NOINVERT
+    VK_NEXT,        KEY_PGDN,               VIRTKEY, NOINVERT
+    VK_PRIOR,       KEY_PGUP,               VIRTKEY, NOINVERT
+    VK_RIGHT,       KEY_RG,                 VIRTKEY, NOINVERT
+    VK_UP,          KEY_UP,                 VIRTKEY, NOINVERT
+END
+
+#endif    // Neutral (Default) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON06              ICON    DISCARDABLE     "icon6.ico"
+IDI_ICON04              ICON    DISCARDABLE     "icon4.ico"
+IDI_ICON07              ICON    DISCARDABLE     "ico00002.ico"
+IDI_ICON08              ICON    DISCARDABLE     "icon8.ico"
+IDI_ICON10              ICON    DISCARDABLE     "icon10.ico"
+IDI_ICON14              ICON    DISCARDABLE     "icon14.ico"
+IDI_ICON17              ICON    DISCARDABLE     "icon17.ico"
+IDI_ICON16              ICON    DISCARDABLE     "icon16.ico"
+IDI_ICON05              ICON    DISCARDABLE     "lgck3.ico"
+IDI_ICON18              ICON    DISCARDABLE     "icon18.ico"
+IDI_ICON19              ICON    DISCARDABLE     "icon19.ico"
+IDI_ICON20              ICON    DISCARDABLE     "icon20.ico"
+IDI_ICON21              ICON    DISCARDABLE     "icon21.ico"
+IDI_ICON12              ICON    DISCARDABLE     "abc1.ico"
+IDI_ICON15              ICON    DISCARDABLE     "icon15.ico"
+ABC                     ICON    DISCARDABLE     "icon22.ico"
+IDI_ICON30              ICON    DISCARDABLE     "ico00005.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "bitmap1.bmp"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau",                    IDM_NEW, GRAYED
+        MENUITEM "&Ouvrir",                     IDM_OPEN
+        MENUITEM "&Enregistrer",                IDM_SAVE, GRAYED
+        MENUITEM "&Enregistrer sous...",        IDM_SAVEAS, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "Quitter",                     IDM_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "Couper",                      IDM_CUT, GRAYED
+        MENUITEM "Copier",                      IDM_COPY
+        MENUITEM "Coller",                      IDM_PASTE
+    END
+    POPUP "&Zoom"
+    BEGIN
+        MENUITEM "x1",                          IDM_1x, CHECKED
+        MENUITEM "x2",                          IDM_2x
+        MENUITEM "x4",                          IDM_4x
+    END
+    POPUP "&Aide", HELP
+    BEGIN
+        MENUITEM "À propos de ...",             IDM_ABOUT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x3L
+#else
+ FILEFLAGS 0x2L
+#endif
+ FILEOS 0x40004L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0c04b0"
+        BEGIN
+            VALUE "Comments", "It is illegal to distribute this program for profit. User is not autorized to reverse engine this program. Evaluation only. \0"
+            VALUE "CompanyName", "PumpkinWare Enrg.\0"
+            VALUE "FileDescription", "OBL3 editor for Statics System V3.0 developper's kit\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "OBL3EDIT\0"
+            VALUE "LegalCopyright", "Copyright © 1997 François Blanchette\0"
+            VALUE "OriginalFilename", "OBL3EDIT.EXE\0"
+            VALUE "ProductName", "OBL3 Editor V1.0\0"
+            VALUE "ProductVersion", "BETA - EVALUATION COPY (shareware version)\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_APROPOSDE DIALOGEX 50, 50, 187, 121
+STYLE DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "Imaview pour Windows (évaluation seulement)"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,70,94,50,14
+    ICON            IDI_ICON15,IDC_STATIC,7,8,18,20
+    LTEXT           "Ce programme est un SHAREWARE écrit par François Blanchette avec Visual C++ 4.0  .",
+                    IDC_STATIC,42,12,129,26
+    LTEXT           "Téléphone: 1-(514)-462-2755",IDC_STATIC,39,72,100,8
+    LTEXT           "3825 Bazin, Brossard Qc Canada J4Z-2J3",IDC_STATIC,40,
+                    43,61,28
+    ICON            IDI_ICON16,IDC_STATIC,156,92,18,20
+END
+
+IDD_ALERTE DIALOGEX 200, 150, 185, 92
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "AVERTISSEMENT"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Oui",IDOK,14,66,50,14
+    PUSHBUTTON      "&Non",IDNO,67,66,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,120,66,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,34,14,123,17
+    LTEXT           "Souhaitez-vous sauvegarder avant de quitter ?",
+                    IDC_STATIC2,34,37,91,20
+    ICON            IDI_ICON03,IDC_STATIC,7,13,18,20
+    CONTROL         103,IDC_STATIC,"Static",SS_BITMAP,135,47,23,15
+END
+
+IDD_COLORPROP DIALOGEX 100, 100, 213, 145
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_3DLOOK | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTROLPARENT
+CAPTION "Propriétés d'une couleur"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,121,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,134,120,50,14
+    SCROLLBAR       IDC_SCROLLRED,15,49,135,10
+    SCROLLBAR       IDC_SCROLLGREEN,15,70,136,10
+    SCROLLBAR       IDC_SCROLLBLUE,15,92,136,10
+    LTEXT           "ROUGE",IDC_STATIC,163,50,27,8
+    LTEXT           "VERT",IDC_STATIC,163,70,20,8
+    LTEXT           "BLEU",IDC_STATIC,163,95,20,8
+END
+
+IDD_INFO DIALOGEX 200, 150, 173, 86
+STYLE DS_LOCALEDIT | DS_MODALFRAME | DS_3DLOOK | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "INFORMATIONS"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "&OK",IDOK,62,67,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,30,11,126,47,SS_NOPREFIX,WS_EX_TRANSPARENT
+    ICON            IDI_ICON30,IDC_STATIC,4,9,18,20
+    ICON            170,IDC_STATIC,147,62,18,20
+    ICON            IDI_ICON13,IDC_STATIC,125,62,18,20,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_APROPOSDE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+
+    IDD_ALERTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_COLORPROP, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 206
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_INFO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 166
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_NEW                 "Nouveau"
+    IDM_OPEN                "Ouvrir"
+    IDM_SAVE                "Sauvegarder"
+    IDM_COPY                "Copier"
+    IDM_PASTE               "Coller"
+    IDM_PRINT               "Imprimer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_CUT                 "Couper"
+    IDM_COMBO               "Drop-down list combo box"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_ABOUT               "À propos de.."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_DELETE              "Supprimer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_PROPS               "Propriétés"
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

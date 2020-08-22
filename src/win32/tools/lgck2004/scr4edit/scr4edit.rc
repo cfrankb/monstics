@@ -1,0 +1,1518 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_SCR4TYPE            ICON    DISCARDABLE     "res\\scr4editDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Sen&d...",                    ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Information",                 IDM_INFORMATION
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Levels"
+    BEGIN
+        MENUITEM "&Previous Level\tF3",         IDM_PREVIOUSLEVEL
+        MENUITEM "&Next Level\tF4",             IDM_NEXTLEVEL
+        MENUITEM SEPARATOR
+        POPUP "&Background color"
+        BEGIN
+            MENUITEM "Back\tF7",                    IDM_DECBKCOLOR
+            MENUITEM "Next \tF8",                   IDM_INCBKCOLOR
+            MENUITEM SEPARATOR
+            MENUITEM "Default",                     IDM_DEFAULTBKCOLOR
+        END
+        MENUITEM "P&roperties",                 IDM_LEVELPROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Duplicate",                  IDM_DUPLICATELEVEL
+        MENUITEM "&Add Level",                  IDM_ADDNEWLEVEL
+        MENUITEM "Move Level",                  IDM_MOVELEVEL
+        MENUITEM SEPARATOR
+        POPUP "&Insert Level"
+        BEGIN
+            MENUITEM "Before",                      IDM_INSERTLEVEL
+            MENUITEM "After",                       IDM_INSERTLEVELAFTER
+        END
+        MENUITEM "D&elete Level",               IDM_DELETELEVEL
+    END
+    POPUP "&Objects"
+    BEGIN
+        MENUITEM "&Insert object\tINS",         IDM_INSERTOBJECT
+        MENUITEM "&Delete object\tDEL",         IDM_DELETEOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "D&uplicate\tF6",              IDM_DUPLICATEOBJECT
+        MENUITEM "Remove all",                  IDM_REMOVEALL
+        MENUITEM SEPARATOR
+        MENUITEM "Bring to &front",             IDM_BRINGTOFRONT
+        MENUITEM "Send to &back",               IDM_SENDTOBACK
+        MENUITEM SEPARATOR
+        POPUP "Sort Objects"
+        BEGIN
+            MENUITEM "Load settings",               IDM_LOADSORTDATA
+            MENUITEM "Save settings",               IDM_SAVESORTDATA
+            MENUITEM SEPARATOR
+            MENUITEM "Clear settings",              IDM_CLEAR_SORT_DATA
+            MENUITEM SEPARATOR
+            MENUITEM "Edit settings",               IDM_EDITSORTDATA
+            MENUITEM SEPARATOR
+            MENUITEM "Apply filter",                IDM_APPLYSORTDATA
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Edit local\tF5",             IDM_EDITLOCAL
+    END
+    POPUP "&Misc."
+    BEGIN
+        MENUITEM "&Frames manager",             IDM_FRAMEEDIT
+        MENUITEM "&Classes Manager",            IDM_CLASSEDIT
+        MENUITEM "&Objects manager",            IDM_PROTOEDITOR
+        MENUITEM SEPARATOR
+        MENUITEM "Paths manager",               IDM_EDITSYSPATHS
+        MENUITEM SEPARATOR
+        POPUP "System &Tags"
+        BEGIN
+            MENUITEM "&Points",                     IDM_POINTS
+            MENUITEM "&Sounds",                     IDM_SOUNDS
+            MENUITEM "&Actions",                    IDM_TAGSACTIONS
+            MENUITEM "User Defs",                   IDM_USERDEFS
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Objects Wizard",              IDM_OBJECTSWIZARD
+        MENUITEM SEPARATOR
+        POPUP "&Import data"
+        BEGIN
+            MENUITEM "Class information",           IDM_IMPORT_CLASS
+            MENUITEM "&New Frame sets",             IDM_INSERTFRAMES
+            MENUITEM "Color Palette",               IDM_IMPORTPAL
+            MENUITEM "Reset palette",               IDM_RESETPAL
+        END
+        POPUP "&Export data"
+        BEGIN
+            MENUITEM "C/C++ &Declarations",         IDM_EXPORT_DECLARATIONS
+            MENUITEM "C&lass Information",          IDM_EXPORT_CLASS
+            MENUITEM "Diagnostic &report",          IDM_EXPORT_DIAGNOSTIC
+            MENUITEM "Color Palette",               IDM_EXPORTPAL
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "&Update frames",              IDM_UPDATEFRAMES
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Auto update data",           IDM_AUTO_UPDATEDATA, CHECKED
+        MENUITEM "&Hi-lite selection",          IDM_HI_LITE_SELECTION
+        , CHECKED
+        MENUITEM "&Draw attributs",             IDM_DRAW_ATTRIBUTS, CHECKED
+        MENUITEM SEPARATOR
+        MENUITEM "Gamma correction\tF11",       IDM_GAMMACORRECTION
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "S&ave settings",              IDM_SAVESETTINGS, CHECKED
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About scr4edit...",          ID_APP_ABOUT
+        MENUITEM "Test123",                     IDM_TEST123
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "+",            IDM_PLUS,               ASCII,  NOINVERT
+    "-",            IDM_MINUS,              ASCII,  NOINVERT
+    "=",            IDM_PLUS,               ASCII,  NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      IDM_DELETEOBJECT,       VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_DOWN,        IDM_DOWN,               VIRTKEY, NOINVERT
+    VK_DOWN,        IDM_DOWNX,              VIRTKEY, SHIFT, NOINVERT
+    VK_F11,         IDM_GAMMACORRECTION,    VIRTKEY, NOINVERT
+    VK_F3,          IDM_PREVIOUSLEVEL,      VIRTKEY, NOINVERT
+    VK_F4,          IDM_NEXTLEVEL,          VIRTKEY, NOINVERT
+    VK_F5,          IDM_EDITLOCAL,          VIRTKEY, NOINVERT
+    VK_F6,          IDM_DUPLICATEOBJECT,    VIRTKEY, NOINVERT
+    VK_F7,          IDM_DECBKCOLOR,         VIRTKEY, NOINVERT
+    VK_F8,          IDM_INCBKCOLOR,         VIRTKEY, NOINVERT
+    VK_HOME,        IDM_HOME,               VIRTKEY, NOINVERT
+    VK_INSERT,      IDM_INSERTOBJECT,       VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        IDM_LEFT,               VIRTKEY, NOINVERT
+    VK_LEFT,        IDM_LEFTX,              VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      IDM_DUPLICATEOBJECT,    VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_RIGHT,              VIRTKEY, NOINVERT
+    VK_RIGHT,       IDM_RIGHTX,             VIRTKEY, SHIFT, NOINVERT
+    VK_UP,          IDM_UP,                 VIRTKEY, NOINVERT
+    VK_UP,          IDM_UPX,                VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+    "_",            IDM_MINUS,              ASCII,  NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 180, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About scr4edit"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,7,15,18,20
+    LTEXT           "Script Editor for LGCK",IDC_STATIC,40,10,92,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1998, 1999, 2000 && 2001\nFrancois Blanchette\nAll right reserved.",
+                    IDC_STATIC,40,25,119,31
+    DEFPUSHBUTTON   "OK",IDOK,141,7,32,14,WS_GROUP
+END
+
+IDD_OBJECTS DIALOG DISCARDABLE  0, 0, 187, 148
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object types manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LIST,7,7,112,126,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "Select",IDOK,123,15,50,14
+    PUSHBUTTON      "&Add",IDC_ADD,123,35,50,14
+    PUSHBUTTON      "&Edit",IDC_EDIT,123,55,50,14
+    PUSHBUTTON      "&Duplicate",IDC_DUPLICATE,123,75,50,14
+    PUSHBUTTON      "&Close",IDC_CLOSE,123,115,50,14
+    PUSHBUTTON      "Delete",IDC_BDELETE,123,95,50,14
+END
+
+IDD_CLASSEDIT DIALOG DISCARDABLE  0, 0, 164, 71
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object class description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Value",IDC_STATIC,9,10,19,8
+    COMBOBOX        IDC_CVALUE,41,7,48,53,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "System",IDC_CSYSTEM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,103,9,39,10
+    LTEXT           "Label",IDC_STATIC,9,28,18,8
+    EDITTEXT        IDC_ELABEL,41,25,114,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,7,51,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,107,50,50,14
+END
+
+IDD_CLASSLIST DIALOG DISCARDABLE  0, 0, 189, 117
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object classes manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Add",IDC_BADD,130,4,50,14
+    PUSHBUTTON      "&Delete",IDC_BDELETE,130,64,50,14
+    PUSHBUTTON      "&Edit",IDC_BEDIT,130,34,50,14
+    PUSHBUTTON      "&Close",IDC_BCLOSE,130,94,50,14
+    LISTBOX         IDC_LIST,13,4,109,106,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_NAMEDESC DIALOG DISCARDABLE  0, 0, 201, 111
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New level"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ENAME,4,16,114,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_ETITLE,4,48,190,56,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,144,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,144,24,50,14
+    LTEXT           "Information",IDC_STATIC,4,39,65,8
+    LTEXT           "Name",IDC_STATIC,4,7,20,8
+END
+
+IDD_FRAMELIST DIALOG DISCARDABLE  0, 0, 180, 122
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Frame sets manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Close",IDCANCEL,119,95,50,14
+    LISTBOX         IDC_LIST,7,8,104,107,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&Add",IDC_BADD,119,10,50,14
+    PUSHBUTTON      "&Edit",IDC_BEDIT,119,30,50,14
+    PUSHBUTTON      "&Update all",IDC_BUPDATEALL,119,74,50,14
+    PUSHBUTTON      "&Delete",IDC_BDELETE,119,53,50,14
+END
+
+IDD_FRAMEEDIT DIALOG DISCARDABLE  0, 0, 205, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Frame set properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,13,11,20,8
+    EDITTEXT        IDC_ENAME,13,20,124,14,ES_AUTOHSCROLL
+    LTEXT           "Filename",IDC_STATIC,15,42,29,8
+    EDITTEXT        IDC_EFILENAME,14,50,126,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,148,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,148,24,50,14
+    PUSHBUTTON      "&Browse",IDC_BROWSE,148,51,50,14
+END
+
+IDD_MESSAGEBOX DIALOG DISCARDABLE  0, 0, 186, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "MessageBox"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Close",IDOK,67,164,50,14
+    EDITTEXT        IDC_EDIT,13,13,158,147,ES_MULTILINE | WS_VSCROLL
+END
+
+IDD_OBJSWIZ DIALOG DISCARDABLE  0, 0, 257, 121
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Objects Wizard"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Go",IDOK,200,7,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,200,24,50,14
+    LTEXT           "Enter the file specification for the frame sets you wish to base your objects on. (allows wildcards)",
+                    IDC_STATIC,13,57,177,17
+    EDITTEXT        IDC_EFILENAME,13,78,175,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse",IDC_BBROWSE,139,95,50,14
+    COMBOBOX        IDC_CCLASS,13,40,117,53,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "&New",IDC_BNEW,139,39,50,14
+    LTEXT           "Select the base class for every new objects that you want created.",
+                    IDC_STATIC,13,16,169,20
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Script Editor V4.0\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "SCR4EDIT\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "OriginalFilename", "SCR4EDIT.EXE\0"
+            VALUE "ProductName", "Statics System 3.0 Developers Kit for Windows 95/98 and NT.\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_OBJECTS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_CLASSEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 157
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 64
+    END
+
+    IDD_CLASSLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 110
+    END
+
+    IDD_NAMEDESC, DIALOG
+    BEGIN
+        LEFTMARGIN, 4
+        RIGHTMARGIN, 194
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+
+    IDD_FRAMELIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 115
+    END
+
+    IDD_FRAMEEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 198
+        TOPMARGIN, 5
+        BOTTOMMARGIN, 71
+    END
+
+    IDD_MESSAGEBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_OBJSWIZ, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 114
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "Script Editor 4.0\n\nScript Editor\nScript Editor 4.0 Files (*.scr)\n.scr\nScr4edit.Document\nScr4edit Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Script Editor 4.0"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+    ID_FILE_SEND_MAIL       "Send the active document through electronic mail\nSend Mail"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_DUPLICATELEVEL      "Duplicate this level to the next one.\nDuplicate level"
+    IDM_INSERTFRAMES        "Insert another frame set into the database.\nInsert frames"
+    IDM_UPDATEFRAMES        "Update frames set previously loaded.\nUpdate frames"
+    IDM_PROTOEDITOR         "View or modify objects properties.\nObjects manager"
+    IDM_INSERTOBJECT        "Insert another object from the objects manager.\nInsert object"
+    IDM_DELETEOBJECT        "Delete the currently selected object.\nDelete object"
+    IDM_DUPLICATEOBJECT     "Duplicate the currently selected object.\nDuplicate object"
+    IDM_CLASSEDIT           "Add/Modify the classes of objects.\nClasses Manager"
+    IDM_ADDNEWLEVEL         "Add a new level to the database.\nAdd level"
+    IDM_EDITLOCAL           "View or modifiy the properties of the current object.\nObject properties"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_INSERTLEVEL         "Insert a new level before this one.\nInsert before"
+    IDM_PREVIOUSLEVEL       "Move to previous level.\nPrevious level"
+    IDM_NEXTLEVEL           "Move to next level.\nNext level"
+    IDM_DELETELEVEL         "Delete the current level.\nDelete level"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LEVELPROPERTIES     "View or modify lthe level's properties.\nLevel properties"
+    IDM_BRINGTOFRONT        "Bring the current object to top of the z-order.\nBring to front"
+    IDM_SENDTOBACK          "Send the current object to bottom of the z-order.\nSend to back"
+    IDM_SELECTION           "Hi-lite or not the current object.\nHi-lite selection"
+    IDM_SAVESETTINGS        "Save the user's preferences when closing.\nSave settings"
+    IDM_INSERTLEVELAFTER    "Insert a new level after this one.\nInsert after"
+    IDM_REMOVEALL           "Remove all the objects on this level.\nRemove all"
+    IDM_DRAWATTRIBUTS       "Draw the attributs given to individual objects.\nDraw attributs"
+    IDM_DECBKCOLOR          "Decrement the background color.\nDec  bkcolor"
+    IDM_INCBKCOLOR          "Increase background color.\nInc bkcolor"
+    IDM_DEFAULTBKCOLOR      "Change background color to black. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_INFORMATION         "View or modify database information.\nDatabase information"
+    IDM_EXPORT_DECLARATIONS "Export C/C++ declarations to be used with a high-level compiler."
+    IDM_EXPORT_DIAGNOSTIC   "Export a diagnostic report to help you resolve problems with the game engine."
+    IDM_EXPORTCLASS         "Export class information into a distributable data file."
+    IDM_EXPORT_CLASS        "Export class information into a distributable data file."
+    IDM_FRAMEEDIT           "View/Modify frame sets arrangement in this database.\nFrames manager"
+    IDM_IMPORTCLASS         "Import class information from an import file."
+    IDM_IMPORT_CLASS        "Import class information from an import file."
+    IDM_OBJECTSWIZARD       "Use the wizard to help you construct or update your object set.\nObjects Wizard"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_POINTS              "View or modify points/bonus arrangements."
+    IDM_SOUNDS              "View or modify the sound objects configuration"
+    IDM_USERDEFS            "View or modifiy user defined tags and constantes."
+    IDM_TAGSACTIONS         "View or modify the action tags"
+    IDM_MOVELEVEL           "Move current level before or after another."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "Property Sheet"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_EDITSYSPATHS        "Edit or modify the system paths"
+    IDM_EXPORTPAL           "Export the current color palette into a .pal file"
+    IDM_IMPORTPAL           "Import a color palette from a palette file"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\scr4edit.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splsh16.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+CG_IDR_POPUP_SCR4EDIT_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "Duplicate",                   IDM_DUPLICATEOBJECT
+        MENUITEM "Delete object",               IDM_DELETEOBJECT
+        MENUITEM "Edit prototype",              ID_POPUP_EDITCLASS
+        MENUITEM SEPARATOR
+        MENUITEM "Bring to &front",             IDM_BRINGTOFRONT
+        MENUITEM "Send to &back",               IDM_SENDTOBACK
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  IDM_EDITLOCAL
+    END
+END
+
+IDR_SCRIPT_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "_TEST_"
+    BEGIN
+        MENUITEM "&Insert object\tINS",         IDM_INSERTOBJECT
+        MENUITEM SEPARATOR
+        MENUITEM "&Previous Level\tF3",         IDM_PREVIOUSLEVEL
+        MENUITEM "&Next Level\tF4",             IDM_NEXTLEVEL
+        MENUITEM SEPARATOR
+        POPUP "&Background color"
+        BEGIN
+            MENUITEM "Back\tF7",                    IDM_DECBKCOLOR
+            MENUITEM "Next \tF8",                   IDM_INCBKCOLOR
+            MENUITEM SEPARATOR
+            MENUITEM "Default",                     IDM_DEFAULTBKCOLOR
+        END
+        MENUITEM "P&roperties",                 IDM_LEVELPROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "&Duplicate",                  IDM_DUPLICATELEVEL
+        MENUITEM "&Add Level",                  IDM_ADDNEWLEVEL
+        MENUITEM "Move Level",                  IDM_MOVELEVEL
+        MENUITEM SEPARATOR
+        POPUP "&Insert Level"
+        BEGIN
+            MENUITEM "Before",                      IDM_INSERTLEVEL
+            MENUITEM "After",                       IDM_INSERTLEVELAFTER
+        END
+        MENUITEM "D&elete Level",               IDM_DELETELEVEL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_OBJECTSEDIT DIALOG DISCARDABLE  0, 0, 264, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object Type properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,14,9,20,8
+    EDITTEXT        IDC_ENAME,65,9,124,14,ES_AUTOHSCROLL
+    LTEXT           "Frame set",IDC_STATIC,14,24,32,8
+    COMBOBOX        IDC_CFRAMESET,65,25,124,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Base Frame",IDC_STATIC,14,39,38,8
+    COMBOBOX        IDC_CBASEFRAME,65,39,48,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Animate",IDC_CANIMATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,123,41,39,10
+    LTEXT           "Obj. Class",IDC_STATIC,14,54,46,8
+    COMBOBOX        IDC_CCLASS,65,53,123,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Object Key",IDC_STATIC,13,71,37,8
+    COMBOBOX        IDC_COBJECTKEY,65,67,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CTRIGGER,115,67,73,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "&OK",IDOK,201,10,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,201,26,50,14
+    LTEXT           "Speed - Move",IDC_STATIC,13,84,46,8
+    COMBOBOX        IDC_CMOVESPEED,65,81,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CANISPEED,141,82,48,67,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Anime",IDC_STATIC,118,84,20,8
+    COMBOBOX        IDC_CAIM,65,98,48,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Default Aim",IDC_STATIC,14,101,37,8
+    COMBOBOX        IDC_CPTS,142,97,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Pts",IDC_STATIC,120,101,11,8
+    LTEXT           "Play sound",IDC_STATIC,13,114,36,8
+    COMBOBOX        IDC_CSOUND,65,112,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CPROTO,143,112,48,30,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Proto",IDC_STATIC,119,113,18,8
+END
+
+IDD_TAGEDIT DIALOG DISCARDABLE  0, 0, 239, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,7,10,20,8
+    EDITTEXT        IDC_ENAME,41,7,124,14,ES_AUTOHSCROLL
+    LTEXT           "Content",IDC_STATIC,7,26,26,8
+    EDITTEXT        IDC_ECONTENT,41,23,124,14,ES_AUTOHSCROLL
+    LTEXT           "Value",IDC_STATIC,7,40,19,8
+    COMBOBOX        IDC_CVALUE,42,38,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,182,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,24,50,14
+END
+
+IDD_TAGLIST DIALOG DISCARDABLE  0, 0, 174, 140
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tags List"
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "Close",IDCANCEL,117,119,50,14
+    LISTBOX         IDC_LIST,7,7,104,126,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BADD,117,9,50,14
+    PUSHBUTTON      "Delete",IDC_BDELETE,117,61,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "&Edit",IDC_BEDIT,117,34,50,14
+END
+
+IDD_PROTOPAGE1 DIALOG DISCARDABLE  0, 0, 191, 95
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,8,7,20,8
+    EDITTEXT        IDC_ENAME,59,7,124,14,ES_AUTOHSCROLL
+    LTEXT           "Frame set",IDC_STATIC,8,22,32,8
+    COMBOBOX        IDC_CFRAMESET,59,23,124,88,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Base Frame",IDC_STATIC,8,36,38,8
+    COMBOBOX        IDC_CBASEFRAME,59,36,48,77,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "Animate",IDC_CANIMATE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,117,39,39,10
+    LTEXT           "Obj. Class",IDC_STATIC,8,52,46,8
+    COMBOBOX        IDC_CCLASS,59,50,123,73,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Object Key",IDC_STATIC,7,68,37,8
+    COMBOBOX        IDC_COBJECTKEY,59,65,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CTRIGGER,109,65,73,59,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_PROTOPAGE2 DIALOG DISCARDABLE  0, 0, 191, 95
+STYLE WS_CHILD | WS_DISABLED | WS_CAPTION
+CAPTION "Features"
+BEGIN
+    LTEXT           "Move",IDC_STATIC,7,7,27,8
+    COMBOBOX        IDC_CMOVESPEED,53,7,48,70,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Anime",IDC_STATIC,105,7,20,8
+    COMBOBOX        IDC_CANISPEED,136,7,48,67,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Default Aim",IDC_STATIC,7,22,37,8
+    COMBOBOX        IDC_CAIM,53,22,48,61,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CDAMAGES,53,37,48,65,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CHITPOINTS,136,38,48,64,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hit points",IDC_STATIC,105,38,30,8
+    LTEXT           "Damages",IDC_STATIC,7,37,31,8
+    LTEXT           "User tag",IDC_STATIC,105,23,28,8
+    COMBOBOX        IDC_CUSERTAG,136,23,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Power Level",IDC_STATIC,7,52,40,8
+    COMBOBOX        IDC_CPOWERLEVEL,53,52,48,51,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROTOPAGE3 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Death"
+BEGIN
+    LTEXT           "Change To",IDC_STATIC,7,7,38,8
+    COMBOBOX        IDC_CCHPROTO,53,7,126,56,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Play sound",IDC_STATIC,7,23,40,8
+    COMBOBOX        IDC_CCHSOUND,53,23,48,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CREBIRTHS,53,39,48,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CDELAY,131,39,48,49,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Rebirths",IDC_STATIC,7,39,27,8
+    LTEXT           "Delay",IDC_STATIC,106,42,19,8
+    LTEXT           "Points",IDC_STATIC,106,25,19,8
+    COMBOBOX        IDC_CPTS,131,23,48,64,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO1,53,55,126,30,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Action",IDC_STATIC,7,55,21,8
+END
+
+IDD_PROTOPAGE4 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Auto"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CAUTO_CHTIME,130,7,48,63,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_CHPROTO,52,7,70,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_FIRETIME,130,24,48,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ChangeTo",IDC_STATIC,7,7,34,8
+    COMBOBOX        IDC_CAUTO_BULLET,52,24,70,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Trow bullet",IDC_STATIC,7,24,36,8
+    LTEXT           "Play sound",IDC_STATIC,7,41,36,8
+    COMBOBOX        IDC_CAUTO_SOUND,52,41,70,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_STIME,130,41,48,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_TRIGGERTIME,130,58,48,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "AutoCall Trigger",IDC_CAUTO_CALLTRIGGER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,53,60,66,10
+END
+
+IDD_EDITLOCAL DIALOG DISCARDABLE  0, 0, 221, 87
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edit Local properties"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,163,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,163,24,50,14
+    EDITTEXT        IDC_EOBJECT,57,9,96,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_ECLASS,57,24,96,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Object",IDC_STATIC,7,12,22,8
+    LTEXT           "Class",IDC_STATIC,7,27,18,8
+    COMBOBOX        IDC_CTRIGGERKEY,57,39,48,61,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "TriggerKey",IDC_STATIC,7,41,35,8
+    COMBOBOX        IDC_CSUBCLASS,57,52,48,57,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Sub Class",IDC_STATIC,7,54,32,8
+    CONTROL         "Hidden",IDC_C80,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    109,38,39,10
+    CONTROL         "Frozen",IDC_C40,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    109,48,37,10
+    CONTROL         "Extra 1",IDC_C20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    109,58,38,10
+    CONTROL         "Extra 2",IDC_C10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    109,68,38,10
+    PUSHBUTTON      "Obj. Proto",IDC_BPROTO,163,66,50,14
+    PUSHBUTTON      "More ...",IDC_BMORE,163,48,50,14
+END
+
+IDD_MOVELEVEL DIALOG DISCARDABLE  0, 0, 180, 103
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Move Level"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,7,82,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,123,82,50,14
+    LISTBOX         IDC_LISTLEVELS,7,18,127,56,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Before",IDC_CBEFORE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,136,22,37,10
+    CONTROL         "After",IDC_CAFTER,"Button",BS_AUTORADIOBUTTON,136,35,31,
+                    10
+    LTEXT           "Select target destination",IDC_STATIC,9,7,77,8
+END
+
+IDD_OBJECTS2 DIALOG DISCARDABLE  0, 0, 253, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Object types manager"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Select",IDOK,196,7,50,14
+    PUSHBUTTON      "&Add",IDC_ADD,196,27,50,14
+    PUSHBUTTON      "&Edit",IDC_EDIT,196,47,50,14
+    PUSHBUTTON      "&Duplicate",IDC_DUPLICATE,196,67,50,14
+    PUSHBUTTON      "&Close",IDC_CLOSE,196,107,50,14
+    PUSHBUTTON      "Delete",IDC_BDELETE,196,87,50,14
+    CONTROL         "List1",IDC_LISTOBJECTS,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SORTASCENDING | WS_BORDER | 
+                    WS_TABSTOP,7,7,182,116
+END
+
+IDD_TAGEDIT2 DIALOG DISCARDABLE  0, 0, 239, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Tag Description"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",IDC_STATIC,7,9,20,8
+    COMBOBOX        IDC_ENAME,42,7,123,56,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Content",IDC_STATIC,7,26,26,8
+    LTEXT           "Value",IDC_STATIC,7,42,19,8
+    COMBOBOX        IDC_CVALUE,42,40,48,48,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,182,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,182,24,50,14
+    COMBOBOX        IDC_ECONTENT,41,22,123,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DINTARRAY DIALOG DISCARDABLE  0, 0, 186, 191
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "An IntArray"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ENAME,7,7,118,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST,7,25,117,159,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Insert",IDC_BINSERT,129,7,50,14
+    PUSHBUTTON      "Add",IDC_BADD,129,26,50,14
+    PUSHBUTTON      "Duplicate",IDC_BDUPLICATE,129,44,50,14
+    PUSHBUTTON      "Edit",IDC_BEDIT,129,63,50,14
+    PUSHBUTTON      "Delete",IDC_BDELETE,129,81,50,14
+    DEFPUSHBUTTON   "&Close",IDOK,129,170,50,14
+    PUSHBUTTON      "More...",IDC_BMORE,129,118,50,14,NOT WS_VISIBLE
+    PUSHBUTTON      "Path",IDC_BPATH,129,100,50,14,NOT WS_VISIBLE
+END
+
+IDD_DINT DIALOG DISCARDABLE  0, 0, 186, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "An Int"
+FONT 8, "MS Sans Serif"
+BEGIN
+    COMBOBOX        IDC_CINT,7,7,105,52,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,129,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,24,50,14
+END
+
+IDD_DINTALL DIALOG DISCARDABLE  0, 0, 261, 100
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "All Int Arrays"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Close",IDOK,204,79,50,14
+    LISTBOX         IDC_LIST,7,7,188,86,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "Add",IDC_BADD,204,7,50,14
+    PUSHBUTTON      "Delete",IDC_BDELETE,204,45,50,14
+    PUSHBUTTON      "Edit",IDC_BEDIT,204,25,50,14
+END
+
+IDD_DEXTRAMODE DIALOG DISCARDABLE  0, 0, 135, 146
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extradata mode"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "Create",IDOK,78,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,78,24,50,14
+    CONTROL         "Path information",IDC_RMODE1,"Button",
+                    BS_AUTORADIOBUTTON,7,13,67,10
+    CONTROL         "Message",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,7,29,45,
+                    10
+    EDITTEXT        IDC_EDIT1,7,44,117,95,ES_AUTOHSCROLL
+END
+
+IDD_EXPORTPAL DIALOG DISCARDABLE  0, 0, 186, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export palette"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Filename",IDC_STATIC,7,7,29,8
+    EDITTEXT        IDC_ENAME,7,17,109,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Browse...",IDC_BBROWSE,129,17,50,14
+    GROUPBOX        "Export format",IDC_FORMATGROUP,7,35,172,38,WS_GROUP
+    CONTROL         "MS-DOS RGB (Game Maker compliant)",IDC_RMSDOS,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,47,140,10
+    CONTROL         "Jasc Palette (PSP compliant)",IDC_RJASC,"Button",
+                    BS_AUTORADIOBUTTON,15,57,107,10
+    DEFPUSHBUTTON   "Export",IDOK,71,77,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,129,77,50,14
+END
+
+IDD_PROTOPAGE5 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Extended"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Enable",IDC_BENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,7,38,10
+    LTEXT           "Change to",IDC_STATIC,7,23,34,8
+    COMBOBOX        IDC_CCHANGE,59,23,71,66,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Delay",IDC_STATIC,142,7,19,8
+    COMBOBOX        IDC_CCHANGEPLR,59,39,71,70,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Change Player",IDC_STATIC,7,39,47,8
+    EDITTEXT        IDC_ECHANGEDELAY,139,23,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ECHAGEPLYDELAY,139,39,40,14,ES_AUTOHSCROLL
+    COMBOBOX        IDC_CEXTSOUND,59,55,71,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EEXTSOUNDDELAY,139,55,40,14,ES_AUTOHSCROLL
+    LTEXT           "Play Sound",IDC_STATIC,7,55,37,8
+    PUSHBUTTON      "More...",IDC_BMORE,129,74,50,14
+END
+
+IDD_DBPAGE1 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "General"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ENAME,7,17,172,14,ES_AUTOHSCROLL | ES_WANTRETURN
+    EDITTEXT        IDC_ETITLE,7,41,172,47,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Information",IDC_STATIC,7,33,65,8
+    LTEXT           "Name",IDC_STATIC,7,7,20,8
+END
+
+IDD_DBPAGE3 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Levels"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Inherit Player Object",IDC_CINHERITPLROBJ,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,7,79,10
+    CONTROL         "Continuity",IDC_CCONTINUITY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,7,19,47,10
+    CONTROL         "Reset HP",IDC_C_ATLEVEL_RESETHP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,31,47,10
+    CONTROL         "Resize Levels",IDC_CRESIZELEVEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,92,13,68,10
+    CONTROL         "Force default Obj.",IDC_CFORCEDEFOBJ,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,7,43,72,10
+    EDITTEXT        IDC_ELEVEL_LEN,92,34,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    EDITTEXT        IDC_ELEVEL_HEI,136,34,40,14,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_DISABLED
+    LTEXT           "Length",IDC_STATIC,93,26,23,8
+    LTEXT           "Heigth",IDC_STATIC,138,26,22,8
+    GROUPBOX        "",IDC_STATIC,88,5,89,49
+END
+
+IDD_DBPAGE2 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Player"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Lives",IDC_STATIC,7,7,18,8
+    LTEXT           "HP",IDC_STATIC,7,22,11,8
+    LTEXT           "Max Lives",IDC_STATIC,89,7,33,8
+    LTEXT           "Max HP",IDC_STATIC,89,22,26,8
+    COMBOBOX        IDC_CBLIVES,27,7,48,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBMAXLIVES,131,7,48,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBHP,27,22,48,82,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CBMAXHP,131,22,48,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "At Death",IDC_STATIC,98,45,67,35
+    CONTROL         "Reset HP",IDC_C_ATDEATH_RESETHP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,55,47,10
+    CONTROL         "Reset Level",IDC_C_ATDEATH_RESETLEV,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,103,68,54,10
+    LTEXT           "Default Player Obj",IDC_STATIC,7,46,58,8
+    COMBOBOX        IDC_CDEFPLROBJ,7,55,84,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_DBPAGE4 DIALOG DISCARDABLE  0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Display"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Signs OBL name",IDC_STATIC,7,7,54,8
+    LTEXT           "Signs set",IDC_STATIC,7,34,30,8
+    LTEXT           "Points OBL name",IDC_STATIC,7,64,56,8
+    COMBOBOX        IDC_CB_SIGNSOBL,7,17,172,55,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_SIGNSSET,7,44,172,52,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CB_POINTSOBL,7,74,172,57,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_PROTOPAGE6 DIALOGEX 0, 0, 186, 95
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "Auto"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    COMBOBOX        IDC_CAUTO_CHTIME,130,7,48,63,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP,0,HIDC_CAUTO_CHTIME
+    COMBOBOX        IDC_CAUTO_CHPROTO,52,7,70,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_FIRETIME,130,24,48,65,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "ChangeTo",IDC_STATIC,7,7,34,8
+    COMBOBOX        IDC_CAUTO_BULLET,52,24,70,48,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Trow bullet",IDC_STATIC,7,24,36,8
+    LTEXT           "Play sound",IDC_STATIC,7,41,36,8
+    COMBOBOX        IDC_CAUTO_SOUND,52,41,70,58,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_STIME,130,41,48,59,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CAUTO_TRIGGERTIME,130,58,48,53,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "AutoCall Trigger",IDC_CAUTO_CALLTRIGGER,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,53,60,66,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_OBJECTSEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 129
+    END
+
+    IDD_TAGEDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_TAGLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 167
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 133
+    END
+
+    IDD_PROTOPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PROTOPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 184
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 87
+    END
+
+    IDD_PROTOPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PROTOPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_EDITLOCAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 213
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_MOVELEVEL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 173
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 96
+    END
+
+    IDD_OBJECTS2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 246
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_TAGEDIT2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 232
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 52
+    END
+
+    IDD_DINTARRAY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 184
+    END
+
+    IDD_DINT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 39
+    END
+
+    IDD_DINTALL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 254
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 93
+    END
+
+    IDD_DEXTRAMODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 139
+    END
+
+    IDD_EXPORTPAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_PROTOPAGE5, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DBPAGE1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DBPAGE3, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DBPAGE2, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_DBPAGE4, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+
+    IDD_PROTOPAGE6, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\scr4edit.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_INSERTLEVEL         "Insert a new level before this one.\nInsert before"
+    IDM_PREVIOUSLEVEL       "Move to previous level.\nPrevious level"
+    IDM_NEXTLEVEL           "Move to next level.\nNext level"
+    IDM_DELETELEVEL         "Delete the current level.\nDelete level"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_LEVELPROPERTIES     "View or modify lthe level's properties.\nLevel properties"
+    IDM_BRINGTOFRONT        "Bring the current object to top of the z-order.\nBring to front"
+    IDM_SENDTOBACK          "Send the current object to bottom of the z-order.\nSend to back"
+    IDM_INSERTLEVELAFTER    "Insert a new level after this one.\nInsert after"
+    IDM_DECBKCOLOR          "Decrement the background color.\nDec  bkcolor"
+    IDM_INCBKCOLOR          "Increase background color.\nInc bkcolor"
+    IDM_DEFAULTBKCOLOR      "Change background color to black. "
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_DUPLICATELEVEL      "Duplicate this level to the next one.\nDuplicate level"
+    IDM_PROTOEDITOR         "View or modify objects properties.\nObjects manager"
+    IDM_INSERTOBJECT        "Insert another object from the objects manager.\nInsert object"
+    IDM_ADDNEWLEVEL         "Add a new level to the database.\nAdd level"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_MOVELEVEL           "Move current level before or after another."
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\scr4edit.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
