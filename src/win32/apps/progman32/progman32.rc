@@ -1,0 +1,539 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+IDR_PROGMATYPE          ICON    DISCARDABLE     "res\\progman32Doc.ico"
+IDI_UQUESTION           ICON    DISCARDABLE     "res\\uquestio.ico"
+IDI_UWARNING            ICON    DISCARDABLE     "res\\uwarning.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_MSDOSICON           ICON    DISCARDABLE     "res\\msdosico.ico"
+IDI_DATAICON            ICON    DISCARDABLE     "res\\dataicon.ico"
+IDI_MSDOSPROG           ICON    DISCARDABLE     "res\\msdospro.ico"
+IDR_MAINFRAME           ICON    PRELOAD DISCARDABLE "res\\idr_main.ico"
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\progman32.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#include ""afxprint.rc""       // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDM_CREATE_NEW
+    BUTTON      IDM_OPEN_FILE
+    BUTTON      IDM_SAVE_FILE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau...",                 IDM_CREATE_NEW
+        MENUITEM "&Ouvrir\tEntrée",             IDM_OPEN
+        MENUITEM "Déplacer\tF7",                IDM_MOVE
+        MENUITEM "Copier\tF8",                  IDM_COPY
+        MENUITEM "Suprimer\tSuprr",             IDM_DELETE
+        MENUITEM "Propriétés\tAlt-Entrée",      IDM_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Exécuter...",                 IDM_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "Test"
+    BEGIN
+        MENUITEM "Test",                        IDM_TEST
+        MENUITEM "Test2",                       IDM_TEST2
+    END
+    POPUP "&Options"
+    BEGIN
+        MENUITEM "&Réorganisation automatique", IDM_OPTION_REORGANIZE_AUTOMATIC
+
+        MENUITEM "Réduire à l'&utilisation",    IDM_OPTION_REDUCE_TO_ICON
+        MENUITEM "&Enregistrer la configuration en quittant", 
+                                                IDM_OPTION_SAVE_CONFIG
+    END
+    POPUP "Fenê&tre"
+    BEGIN
+        MENUITEM "&Cascade\tMaj+F5",            IDM_WINDOWS_CASCADE
+        MENUITEM "&Mosaïque\tMaj+F4",           IDM_WINDOWS_MOSAIC
+        MENUITEM "&Réorganiser les icons",      IDM_WINDOWS_REORGANIZEICONS
+        MENUITEM SEPARATOR
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Rubrique d'aide",            ID__RUBRIQUEDAIDE
+        MENUITEM SEPARATOR
+        MENUITEM "À &propos du Gestionaire de programmes", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      IDM_OPEN,               VIRTKEY, NOINVERT
+    VK_RETURN,      IDM_PROPERTIES,         VIRTKEY, ALT, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About progman32"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "progman32 Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+IDD_RUN DIALOG DISCARDABLE  20, 20, 210, 81
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Exécution"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Ligne de commande :",IDC_STATIC,3,12,71,8
+    EDITTEXT        IDC_ECOMMANDLINE,3,23,143,12,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    CONTROL         "Réd&uire à l'exécution",IDC_CRUNMINIMIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,3,42,80,10
+    DEFPUSHBUTTON   "OK",IDOK,154,6,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,154,24,50,14
+    PUSHBUTTON      "&Parcourir...",IDC_BSEARCH,154,42,50,14
+    PUSHBUTTON      "&Aide",IDC_BHELP,154,60,50,14
+END
+
+8 DIALOG DISCARDABLE  20, 20, 213, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Déplacement d'un programme"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "Déplacer un programme :",115,5,3,85,10,NOT WS_GROUP
+    CONTROL         "A",117,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX,100,3,
+                    62,10
+    LTEXT           "Du groupe de programmes :",99,5,13,91,10,NOT WS_GROUP
+    CONTROL         "B",116,"Static",SS_LEFTNOWORDWRAP | SS_NOPREFIX,100,13,
+                    62,10
+    LTEXT           "&Vers le groupe :",-1,5,25,53,8,NOT WS_GROUP
+    COMBOBOX        118,5,37,130,60,CBS_DROPDOWNLIST | CBS_SORT | WS_BORDER | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,165,6,44,14
+    PUSHBUTTON      "Annuler",2,165,23,44,14
+    PUSHBUTTON      "&Aide",126,165,44,44,14
+END
+
+IDD_PROG_PROPERTIES DIALOG DISCARDABLE  20, 20, 258, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés du programme"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Description :",IDC_STATIC,2,10,43,8,NOT WS_GROUP
+    EDITTEXT        IDC_EDESCRIPTION,77,6,105,12,ES_AUTOHSCROLL
+    LTEXT           "&Ligne de commande :",IDC_STATIC,2,23,71,8,NOT WS_GROUP
+    EDITTEXT        IDC_ECOMMANDLINE,77,20,105,12,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    LTEXT           "&Répertoire de travail :",IDC_STATIC,2,36,72,8,NOT 
+                    WS_GROUP
+    EDITTEXT        IDC_EDIRECTORY,77,34,105,12,ES_AUTOHSCROLL | 
+                    ES_OEMCONVERT
+    LTEXT           "&Touche de raccourci :",IDC_STATIC,2,50,74,8,NOT 
+                    WS_GROUP
+    CONTROL         "Réd&uire à l'exécution",IDC_CMINIMIZE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,77,66,80,12
+    DEFPUSHBUTTON   "OK",IDOK,187,5,66,14
+    PUSHBUTTON      "Annuler",IDCANCEL,187,23,66,14
+    PUSHBUTTON      "&Parcourir...",IDC_BSEARCH,187,41,66,14
+    PUSHBUTTON      "&Changer d'icône...",IDC_BICON,187,59,66,14
+    PUSHBUTTON      "&Aide",IDC_BHELP,187,77,66,14
+    ICON            "",IDC_SICON,24,65,18,20
+    EDITTEXT        IDC_EHOTKEY,77,47,105,12,ES_AUTOHSCROLL | NOT WS_VISIBLE
+END
+
+6 DIALOG DISCARDABLE  25, 22, 234, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Changement d'icône"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Nom de fichier :",99,3,7,53,8,NOT WS_GROUP
+    EDITTEXT        100,58,6,120,12,ES_AUTOHSCROLL | ES_OEMCONVERT
+    LTEXT           "&Icône actuelle :",-1,3,24,52,8,NOT WS_GROUP
+    LISTBOX         102,58,25,120,49,LBS_OWNERDRAWFIXED | 
+                    LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | 
+                    LBS_DISABLENOSCROLL | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,183,6,46,14
+    PUSHBUTTON      "Annuler",2,183,24,46,14
+    PUSHBUTTON      "&Parcourir...",112,183,42,46,14
+    PUSHBUTTON      "&Aide",126,183,60,46,14
+END
+
+IDD_GROUP_PROPERTIES DIALOG DISCARDABLE  20, 21, 234, 64
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés du groupe de programmes"
+FONT 8, "Helv"
+BEGIN
+    LTEXT           "&Description :",99,2,9,43,8,NOT WS_GROUP
+    EDITTEXT        IDC_ENAME,67,7,119,12,ES_AUTOHSCROLL
+    LTEXT           "&Fichier du groupe :",-1,2,24,63,8,NOT WS_GROUP
+    EDITTEXT        IDC_EFILE,67,22,119,12,ES_AUTOHSCROLL | ES_OEMCONVERT
+    DEFPUSHBUTTON   "OK",IDOK,190,6,40,14
+    PUSHBUTTON      "Annuler",IDCANCEL,190,23,40,14
+    PUSHBUTTON      "&Aide",126,190,43,40,14
+END
+
+IDD_NEW_PROG DIALOG DISCARDABLE  20, 20, 162, 63
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Nouveau programme"
+FONT 8, "Helv"
+BEGIN
+    GROUPBOX        "Nouveau",IDC_GROUP,9,6,102,41,WS_GROUP
+    CONTROL         "&Groupe de programmes",IDC_RADIO_GROUP,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,16,18,86,10
+    CONTROL         "&Programme",IDC_RADIO_PROG,"Button",BS_AUTORADIOBUTTON,
+                    16,31,92,10
+    DEFPUSHBUTTON   "OK",IDOK,118,6,40,14,WS_GROUP
+    PUSHBUTTON      "Annuler",IDCANCEL,118,23,40,14,WS_GROUP
+    PUSHBUTTON      "&Aide",126,118,43,40,14,WS_GROUP
+END
+
+IDD_ICONBOX DIALOG DISCARDABLE  0, 0, 208, 214
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Changement d'icône"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EFILENAME,7,18,194,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LISTX,7,50,194,134,LBS_OWNERDRAWFIXED | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | 
+                    LBS_WANTKEYBOARDINPUT | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,43,192,50,14
+    PUSHBUTTON      "Annuler",IDCANCEL,97,192,50,14
+    PUSHBUTTON      "&Parcourir...",IDC_OPENUP,151,192,50,14
+    LTEXT           "&Nom de fichier",-1,7,7,50,8
+    LTEXT           "&Icône actuelle",-1,7,39,52,8
+END
+
+IDD_NEWTHING DIALOG FIXED IMPURE  0, 0, 186, 46
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New table"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Name",-1,7,7,20,8
+    EDITTEXT        IDC_ENAME,7,18,116,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,129,7,50,14
+    PUSHBUTTON      "Cancel",2,129,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "PROGMAN32 MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "PROGMAN32\0"
+            VALUE "LegalCopyright", "Copyright © 1902\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "PROGMAN32.EXE\0"
+            VALUE "ProductName", "PROGMAN32 Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ICONBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 201
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "progman32\n\nProgma\nProgma Files (*.p32)\n.P32\nProgman32.Document\nProgma Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "progman32"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+    ID_FILE_MRU_FILE5       "Open this document"
+    ID_FILE_MRU_FILE6       "Open this document"
+    ID_FILE_MRU_FILE7       "Open this document"
+    ID_FILE_MRU_FILE8       "Open this document"
+    ID_FILE_MRU_FILE9       "Open this document"
+    ID_FILE_MRU_FILE10      "Open this document"
+    ID_FILE_MRU_FILE11      "Open this document"
+    ID_FILE_MRU_FILE12      "Open this document"
+    ID_FILE_MRU_FILE13      "Open this document"
+    ID_FILE_MRU_FILE14      "Open this document"
+    ID_FILE_MRU_FILE15      "Open this document"
+    ID_FILE_MRU_FILE16      "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Close print preview mode\nCancel Preview"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif
+#include "res\progman32.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#include "afxprint.rc"       // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

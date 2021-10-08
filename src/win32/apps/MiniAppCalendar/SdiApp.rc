@@ -1,0 +1,723 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+// Generated Help ID header file
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "resource.hm"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_PCAAPPTYPE          ICON    DISCARDABLE     "res\\SdiAppDoc.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    SEPARATOR
+    BUTTON      ID_VIEW_ALARMSLIST
+    BUTTON      ID_EDIT_NEWCLOCK
+    BUTTON      ID_MOIS_MEMO
+    SEPARATOR
+    BUTTON      ID_MOIS_BACK
+    BUTTON      ID_MOIS_NEXT
+    SEPARATOR
+    BUTTON      ID_MOIS_CURRENT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Envoyer...",                  ID_FILE_SEND_MAIL
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Aperçu a&vant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Nouvelle alarme",             ID_EDIT_NEWCLOCK
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+        MENUITEM "&Alarmes",                    ID_VIEW_ALARMSLIST
+        MENUITEM SEPARATOR
+        MENUITEM "&Options",                    ID_VIEW_OPTIONS
+    END
+    POPUP "&Mois"
+    BEGIN
+        MENUITEM "&Précédent\tCtrl+B",          ID_MOIS_BACK
+        MENUITEM "&Suivant\tCtrl+N",            ID_MOIS_NEXT
+        MENUITEM "&Courant\tF5",                ID_MOIS_CURRENT
+        MENUITEM SEPARATOR
+        MENUITEM "&Mémo\t",                     ID_MOIS_MEMO
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&Rubriques de l'aide",        ID_HELP_FINDER
+        MENUITEM SEPARATOR
+        MENUITEM "&A propos de MiniApp Calendar...", ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "B",            ID_MOIS_BACK,           VIRTKEY, CONTROL, NOINVERT
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_MOIS_NEXT,           VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY, NOINVERT
+    VK_F1,          ID_CONTEXT_HELP,        VIRTKEY, SHIFT, NOINVERT
+    VK_F5,          ID_MOIS_CURRENT,        VIRTKEY, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 217, 60
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de MiniApp Calendar..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "MiniApp Calendar version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1998\nFrancois Blanchette\nTous droits réservés",
+                    IDC_STATIC,40,25,119,25
+    DEFPUSHBUTTON   "OK",IDOK,178,7,32,14,WS_GROUP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0c04b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Copie d'évaluation non-registrée\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MINIAPP CALENDAR\0"
+            VALUE "LegalCopyright", "Copyright © 1998 Francois Blanchette\0"
+            VALUE "OriginalFilename", "SDIAPP.EXE\0"
+            VALUE "ProductName", "MiniApp Package  [FRENCH VERSION]\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 210
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 53
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MiniApp Calendar\n\nPcaApp\nMiniApp Calendar (*.pca)\n.PCA\nPcaApp.Document\nPcaApp Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MiniApp Calendar V1.0"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+    AFX_IDS_HELPMODEMESSAGE "Sélectionnez un objet sur lequel obtenir de l'aide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAJ"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DEF"
+    ID_INDICATOR_OVR        "ECR"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Change les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Change les options d'imprimante et d'impression\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche des pages entières\nAperçu avant impression"
+    ID_FILE_SEND_MAIL       "Envoyer le document par courrier electronique\nEnvoyer"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nA propos de"
+    ID_APP_EXIT             "Ferme l'application ; propose d'enregistrer les documents\nQuitter"
+    ID_HELP_INDEX           "Ouvre l'aide\nRubriques de l'aide"
+    ID_HELP_FINDER          "Liste les rubriques de l'aide\nRubriques de l'aide"
+    ID_HELP_USING           "Affiche des instructions sur l'utilisation de l'aide\nAide"
+    ID_CONTEXT_HELP         "Affiche l'aide sur les clics sur les boutons, menus et fenêtres\nAide"
+    ID_HELP                 "Affiche l'aide sur la tâche ou commande courante\nAide"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Passe au volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Revient au volet précédent\nVolet précédent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en deux volets\nFractionner"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Supprime la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace le texte spécifique par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne le document entier\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+    ID_EDIT_PASTE2          "Insère le contenu du Presse-papiers\nColler"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Change la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Agrandit la fenêtre au format de l'écran"
+    AFX_IDS_SCNEXTWINDOW    "Passe à la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Passe à la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et propose l'enregistrement des documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille d'origine"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode d'aperçu avant impression\nFermer l'aperçu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOIS_NEXT            "Aller au mois suivant\nMois suivant"
+    ID_MOIS_BACK            "Aller au mois précédent\nMois précédent"
+    ID_MOIS_MEMO            "Affiche le mémo du mois courant\nMémo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_PROPSHT_CAPTION     "Property Sheet"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MOIS_CLOCK           "Modifier les alarmes\nAlarmes"
+    ID_ALARMLIST            "Afficher la liste des alarmes\nListe alarmes"
+    ID_VIEW_ALARMSLIST      "Affiche la liste des alarmes\nGestion alarmes"
+    ID_EDIT_NEWCLOCK        "Ajoute une nouvelle alarme\nNouvelle alarme"
+    ID_MOIS_CURRENT         "Aller au mois courant\nMois courant"
+    ID_VIEW_OPTIONS         "Affiche les options\nOptions"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_BSOUND              "Sélectionner un nouveau son\nNouveau son"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SdiApp.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_SPLASH              BITMAP  DISCARDABLE     "res\\Splsh16.bmp"
+IDB_CLOCK               BITMAP  DISCARDABLE     "res\\bmp00001.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_APP_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Annuler\tCtrl+Z",            ID_EDIT_UNDO
+        MENUITEM SEPARATOR
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MEMO DIALOG DISCARDABLE  0, 0, 227, 178
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Mémo"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EMEMO,8,9,210,141,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "&Fermer",IDOK,167,158,50,14
+END
+
+IDD_ALARME DIALOGEX 0, 0, 193, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "IDD_ALARME"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "Date",IDC_STATIC,7,4,181,10,SS_SUNKEN
+    COMBOBOX        IDC_CDAY,6,18,26,81,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CMONTH,33,18,55,79,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_CYEAR,88,18,33,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         168,IDC_STATIC,"Static",SS_BITMAP,138,26,32,30
+    LTEXT           "Heure",IDC_STATIC,7,35,114,10,SS_SUNKEN
+    COMBOBOX        IDC_CHOUR,64,48,28,60,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_CMIN,94,48,27,56,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EINFO,6,74,181,50,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_WANTRETURN | WS_VSCROLL
+    LTEXT           "Informations",IDC_STATIC,7,63,179,11,SS_SUNKEN
+    DEFPUSHBUTTON   "&OK",IDOK,83,155,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,137,155,50,14
+    EDITTEXT        IDC_ESOUND,5,135,164,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BSOUND,172,137,11,11,0,0,HIDC_BSOUND
+    LTEXT           "Fichier sonore",IDC_STATIC,6,124,181,11,SS_SUNKEN
+END
+
+IDD_ALARMSLIST DIALOG DISCARDABLE  0, 0, 188, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Gestion des alarmes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LISTBOX         IDC_LBALARMS,15,10,157,144,LBS_NOINTEGRALHEIGHT | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Nouvelle",IDC_BNEW,13,164,50,14
+    PUSHBUTTON      "Supprimer",IDC_BDELETE,71,164,50,14,WS_DISABLED
+    DEFPUSHBUTTON   "&Fermer",IDOK,129,164,50,14
+END
+
+IDD_BIPBOX DIALOG DISCARDABLE  0, 0, 185, 111
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_SETFOREGROUND | DS_CENTER | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION
+CAPTION "Évenement MiniApp"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&OK",IDOK,63,90,50,14
+    EDITTEXT        IDC_EINFO,26,11,131,72,ES_MULTILINE | ES_READONLY | 
+                    WS_VSCROLL
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MEMO, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 220
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 171
+    END
+
+    IDD_ALARME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_ALARMSLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_BIPBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 178
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 104
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\SdiApp.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ALARME DLGINIT
+BEGIN
+    IDC_CMONTH, 0x403, 8, 0
+0x614a, 0x766e, 0x6569, 0x0072, 
+    IDC_CMONTH, 0x403, 8, 0
+0xe946, 0x7276, 0x6569, 0x0072, 
+    IDC_CMONTH, 0x403, 5, 0
+0x614d, 0x7372, "\000" 
+    IDC_CMONTH, 0x403, 6, 0
+0x7641, 0x6972, 0x006c, 
+    IDC_CMONTH, 0x403, 4, 0
+0x614d, 0x0069, 
+    IDC_CMONTH, 0x403, 5, 0
+0x754a, 0x6e69, "\000" 
+    IDC_CMONTH, 0x403, 8, 0
+0x754a, 0x6c69, 0x656c, 0x0074, 
+    IDC_CMONTH, 0x403, 5, 0
+0x6f41, 0x74fb, "\000" 
+    IDC_CMONTH, 0x403, 10, 0
+0x6553, 0x7470, 0x6d65, 0x7262, 0x0065, 
+    IDC_CMONTH, 0x403, 8, 0
+0x634f, 0x6f74, 0x7262, 0x0065, 
+    IDC_CMONTH, 0x403, 9, 0
+0x6f4e, 0x6576, 0x626d, 0x6572, "\000" 
+    IDC_CMONTH, 0x403, 9, 0
+0xe944, 0x6563, 0x626d, 0x6572, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3030, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3130, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3230, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3330, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3430, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3530, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3630, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3730, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3830, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3930, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3031, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3131, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3231, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3331, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3431, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3531, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3631, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3731, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3831, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3931, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3032, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3132, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3232, "\000" 
+    IDC_CHOUR, 0x403, 3, 0
+0x3332, "\000" 
+    IDC_CMIN, 0x403, 4, 0
+0x303a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x303a, 0x0035, 
+    IDC_CMIN, 0x403, 4, 0
+0x313a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x313a, 0x0035, 
+    IDC_CMIN, 0x403, 4, 0
+0x323a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x323a, 0x0035, 
+    IDC_CMIN, 0x403, 4, 0
+0x333a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x333a, 0x0035, 
+    IDC_CMIN, 0x403, 4, 0
+0x343a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x343a, 0x0035, 
+    IDC_CMIN, 0x403, 4, 0
+0x353a, 0x0030, 
+    IDC_CMIN, 0x403, 4, 0
+0x353a, 0x0035, 
+    0
+END
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif
+#include "res\SdiApp.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxprint.rc"        // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

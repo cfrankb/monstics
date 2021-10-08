@@ -1,0 +1,773 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ICON03              ICON    DISCARDABLE     "res\\icon3.ico"
+IDI_ICON13              ICON    DISCARDABLE     "res\\josiane_.ico"
+418                     ICON    DISCARDABLE     "res\\yoannis.ico"
+404                     ICON    DISCARDABLE     "res\\sophie_b.ico"
+417                     ICON    DISCARDABLE     "res\\soldier.ico"
+416                     ICON    DISCARDABLE     "res\\slalonde.ico"
+415                     ICON    DISCARDABLE     "res\\s_belang.ico"
+414                     ICON    DISCARDABLE     "res\\punk.ico"
+413                     ICON    DISCARDABLE     "res\\prefonta.ico"
+412                     ICON    DISCARDABLE     "res\\nancy.ico"
+411                     ICON    DISCARDABLE     "res\\melanie.ico"
+410                     ICON    DISCARDABLE     "res\\lepage.ico"
+409                     ICON    DISCARDABLE     "res\\keroak.ico"
+408                     ICON    DISCARDABLE     "res\\jlangl.ico"
+407                     ICON    DISCARDABLE     "res\\jjean.ico"
+406                     ICON    DISCARDABLE     "res\\ivone.ico"
+405                     ICON    DISCARDABLE     "res\\hugo.ico"
+403                     ICON    DISCARDABLE     "res\\diane.ico"
+402                     ICON    DISCARDABLE     "res\\desjardi.ico"
+401                     ICON    DISCARDABLE     "res\\claire.ico"
+400                     ICON    DISCARDABLE     "res\\c_camplo.ico"
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDITION_INSERER,     VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPS,          VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPS,          VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROPRETIES DIALOGEX 0, 0, 271, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés d'un numéro"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME,81,62,140,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEL,81,79,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDR,81,96,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFO,81,116,151,51,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,82,177,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,140,177,50,14
+    PUSHBUTTON      "&Change icon...",IDC_CHANGEICON,198,177,68,14
+    ICON            IDI_ICON0,IDC_STATICICON,30,19,18,20,WS_BORDER,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Name",IDC_STATIC,31,64,16,8
+    LTEXT           "Telephone",IDC_STATIC,31,83,35,8
+    LTEXT           "Adress",IDC_STATIC,31,100,26,8
+    LTEXT           "More informations",IDC_STATIC,33,118,39,21
+    LTEXT           "Sheet informations",IDC_STATIC,85,29,75,8
+END
+
+IDD_CHANGEICON DIALOGEX 0, 0, 219, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Changement d'icône"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PATH,10,22,198,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST,10,54,194,133,LBS_OWNERDRAWFIXED | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | 
+                    LBS_WANTKEYBOARDINPUT | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,45,196,50,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,99,196,50,14
+    PUSHBUTTON      "Browse...",IDC_OPENUP,154,196,50,14
+    LTEXT           "File name:",IDC_STATIC,11,11,50,8
+    LTEXT           "Current Icon:",IDC_STATIC,11,43,52,8
+END
+
+IDD_ALERTE DIALOGEX 120, 80, 185, 92
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "AVERTISSEMENT"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Oui",IDOK,14,66,50,14
+    PUSHBUTTON      "&Non",7,67,66,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,120,66,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,34,14,123,17
+    LTEXT           "Souhaitez-vous sauvegarder avant de quitter ?",
+                    IDC_STATIC2,34,37,91,20
+    ICON            IDI_ICON03,IDC_STATIC,7,13,18,20
+    CONTROL         104,IDC_STATIC,"Static",SS_BITMAP,135,47,23,15
+END
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 193, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About MiniApp Reptel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "MiniApp Reptel version 1.0",IDC_STATIC,40,10,94,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1998\nFrancois Blanchette\nAll rights reserved.",
+                    IDC_STATIC,40,25,104,26
+    DEFPUSHBUTTON   "&OK",IDOK,145,7,32,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROPRETIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_CHANGEICON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_ALERTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (France) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_REPTELTYPE          ICON    DISCARDABLE     "res\\ReptelDoc.ico"
+124                     ICON    DISCARDABLE     "res\\ico124.ico"
+154                     ICON    DISCARDABLE     "res\\ico154.ico"
+159                     ICON    DISCARDABLE     "res\\ico159.ico"
+160                     ICON    DISCARDABLE     "res\\ico160.ico"
+161                     ICON    DISCARDABLE     "res\\ico161.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_REPTEL_VIEW MENU DISCARDABLE 
+BEGIN
+    POPUP "_POPUP_"
+    BEGIN
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Effacer\tDel",                ID_EDIT_DELETE
+        MENUITEM "Insérer\tIns",                ID_EDITION_INSERER
+        MENUITEM SEPARATOR
+        MENUITEM "Propriétés\tAlt-Enter",       ID_EDIT_PROPS
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "MiniApp Reptel 1.0\n\nReptel\nMiniApp Reptel Document (*.mrp)\n.MRP\nMiniAppReptel.Document\nReptel Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "MiniApp Reptel 1.0"
+    AFX_IDS_IDLEMESSAGE     "Prêt"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "MAJ"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "DEF"
+    ID_INDICATOR_OVR        "ECR"
+    ID_INDICATOR_REC        "ENR"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Crée un nouveau document\nNouveau"
+    ID_FILE_OPEN            "Ouvre un document existant\nOuvrir"
+    ID_FILE_CLOSE           "Ferme le document actif\nFermer"
+    ID_FILE_SAVE            "Enregistre le document actif\nEnregistrer"
+    ID_FILE_SAVE_AS         "Enregistre le document actif sous un nouveau nom\nEnregistrer sous"
+    ID_FILE_PAGE_SETUP      "Change les options d'impression\nMise en page"
+    ID_FILE_PRINT_SETUP     "Change les options d'imprimante et d'impression\nConfiguration de l'impression"
+    ID_FILE_PRINT           "Imprime le document actif\nImprimer"
+    ID_FILE_PRINT_PREVIEW   "Affiche des pages entières\nAperçu avant impression"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Affiche des informations sur le programme, le numéro de version et le copyright\nA propos de"
+    ID_APP_EXIT             "Ferme l'application ; propose d'enregistrer les documents\nQuitter"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Ouvre ce document"
+    ID_FILE_MRU_FILE2       "Ouvre ce document"
+    ID_FILE_MRU_FILE3       "Ouvre ce document"
+    ID_FILE_MRU_FILE4       "Ouvre ce document"
+    ID_FILE_MRU_FILE5       "Ouvre ce document"
+    ID_FILE_MRU_FILE6       "Ouvre ce document"
+    ID_FILE_MRU_FILE7       "Ouvre ce document"
+    ID_FILE_MRU_FILE8       "Ouvre ce document"
+    ID_FILE_MRU_FILE9       "Ouvre ce document"
+    ID_FILE_MRU_FILE10      "Ouvre ce document"
+    ID_FILE_MRU_FILE11      "Ouvre ce document"
+    ID_FILE_MRU_FILE12      "Ouvre ce document"
+    ID_FILE_MRU_FILE13      "Ouvre ce document"
+    ID_FILE_MRU_FILE14      "Ouvre ce document"
+    ID_FILE_MRU_FILE15      "Ouvre ce document"
+    ID_FILE_MRU_FILE16      "Ouvre ce document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Passe au volet de fenêtre suivant\nVolet suivant"
+    ID_PREV_PANE            "Revient au volet précédent\nVolet précédent"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Fractionne la fenêtre active en deux volets\nFractionner"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Efface la sélection\nEffacer"
+    ID_EDIT_CLEAR_ALL       "Efface tout\nEffacer tout"
+    ID_EDIT_COPY            "Copie la sélection et la place dans le Presse-papiers\nCopier"
+    ID_EDIT_CUT             "Supprime la sélection et la place dans le Presse-papiers\nCouper"
+    ID_EDIT_FIND            "Recherche le texte spécifié\nRechercher"
+    ID_EDIT_PASTE           "Insère le contenu du Presse-papiers\nColler"
+    ID_EDIT_REPEAT          "Répète la dernière action\nRépéter"
+    ID_EDIT_REPLACE         "Remplace le texte spécifique par un texte différent\nRemplacer"
+    ID_EDIT_SELECT_ALL      "Sélectionne le document entier\nSélectionner tout"
+    ID_EDIT_UNDO            "Annule la dernière action\nAnnuler"
+    ID_EDIT_REDO            "Rétablit l'action précédemment annulée\nRétablir"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Affiche ou masque la barre d'outils\nBarre d'outils"
+    ID_VIEW_STATUS_BAR      "Affiche ou masque la barre d'état\nBarre d'état"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change la taille de la fenêtre"
+    AFX_IDS_SCMOVE          "Change la position de la fenêtre"
+    AFX_IDS_SCMINIMIZE      "Réduit la fenêtre en icône"
+    AFX_IDS_SCMAXIMIZE      "Agrandit la fenêtre au format de l'écran"
+    AFX_IDS_SCNEXTWINDOW    "Passe à la fenêtre de document suivante"
+    AFX_IDS_SCPREVWINDOW    "Passe à la fenêtre de document précédente"
+    AFX_IDS_SCCLOSE         "Ferme la fenêtre active et propose l'enregistrement des documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restaure la fenêtre à sa taille d'origine"
+    AFX_IDS_SCTASKLIST      "Active la liste des tâches"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "Ferme le mode d'aperçu avant impression\nFermer l'aperçu"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_AFFICHAGE_GRANDESICONES 
+                            "Affiche les éléments en utilisant de grandes icônes.\nGrande icônes"
+    ID_AFFICHAGE_PETITESICONES 
+                            "Affiche les éléments en utilisant de petites icônes.\nPetites icônes"
+    ID_AFFICHAGE_LISTES     "Affiche les éléments dans une liste.\nListe"
+    ID_AFFICHAGE_DETAIL     "Affiche les informations de chaque élément dans la fenêtre.\nRapport"
+    ID_EDIT_DELETE          "Supprimer une personne\nSupprimer"
+    ID_EDIT_PROPS           "Affiche les propriétés d'une personne\nPropriétés"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_AFFICHAGE_OPTIONS    "Affiche les options de l'application\nOptions"
+    ID_EDITION_INSRER       "Insérer une nouvelle personne\nInsérer"
+    ID_EDITION_INSERER      "Insérer une nouvelle fiche\nInsérer"
+END
+
+#endif    // French (France) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// French (Canada) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRC)
+#ifdef _WIN32
+LANGUAGE LANG_FRENCH, SUBLANG_FRENCH_CANADIAN
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\MiniApp Reptel.ico"
+IDI_ICON0               ICON    DISCARDABLE     "res\\icon0.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\icon1.ico"
+IDI_ICON2               ICON    DISCARDABLE     "res\\icon2.ico"
+136                     ICON    DISCARDABLE     "res\\ico136.ico"
+152                     ICON    DISCARDABLE     "res\\ico152.ico"
+168                     ICON    DISCARDABLE     "res\\ico168.ico"
+311                     ICON    DISCARDABLE     "res\\ico311.ico"
+313                     ICON    DISCARDABLE     "res\\ico313.ico"
+IDI_ICON3               ICON    DISCARDABLE     "res\\ico00001.ico"
+IDI_ICON4               ICON    DISCARDABLE     "res\\icon4.ico"
+IDI_ICON5               ICON    DISCARDABLE     "res\\icon5.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_DELETE,         VIRTKEY, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDITION_INSERER,     VIRTKEY, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPS,          VIRTKEY, NOINVERT
+    VK_RETURN,      ID_EDIT_PROPS,          VIRTKEY, ALT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 193, 57
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "A propos de MiniApp Reptel"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,18,20
+    LTEXT           "MiniApp Reptel version 1.0",IDC_STATIC,40,10,94,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright © 1998\nFrancois Blanchette\nTous droits réservés.",
+                    IDC_STATIC,40,25,104,26
+    DEFPUSHBUTTON   "OK",IDOK,145,7,32,14,WS_GROUP
+END
+
+IDD_PROPRETIES DIALOGEX 0, 0, 271, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Propriétés d'un numéro"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_NAME,81,62,140,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEL,81,79,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ADDR,81,96,78,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFO,81,116,151,51,ES_MULTILINE | ES_AUTOVSCROLL | 
+                    ES_AUTOHSCROLL | ES_WANTRETURN | WS_VSCROLL
+    DEFPUSHBUTTON   "&OK",IDOK,82,177,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,140,177,50,14
+    PUSHBUTTON      "&Changer d'icône...",IDC_CHANGEICON,198,177,68,14
+    ICON            IDI_ICON0,IDC_STATICICON,30,19,18,20,WS_BORDER,
+                    WS_EX_DLGMODALFRAME | WS_EX_CLIENTEDGE | 
+                    WS_EX_STATICEDGE
+    LTEXT           "Nom",IDC_STATIC,31,64,16,8
+    LTEXT           "Téléphone",IDC_STATIC,31,83,35,8
+    LTEXT           "Adresse",IDC_STATIC,31,100,26,8
+    LTEXT           "Autres Informations",IDC_STATIC,33,118,39,21
+    LTEXT           "Informations sur la fiche",IDC_STATIC,85,29,75,8
+END
+
+IDD_CHANGEICON DIALOGEX 0, 0, 219, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Changement d'icône"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_PATH,10,22,198,14,ES_AUTOHSCROLL
+    LISTBOX         IDC_LIST,10,54,194,133,LBS_OWNERDRAWFIXED | 
+                    LBS_USETABSTOPS | LBS_NOINTEGRALHEIGHT | LBS_MULTICOLUMN | 
+                    LBS_WANTKEYBOARDINPUT | WS_HSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",IDOK,45,196,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,99,196,50,14
+    PUSHBUTTON      "Parcourir...",IDC_OPENUP,154,196,50,14
+    LTEXT           "Nom de fichier :",IDC_STATIC,11,11,50,8
+    LTEXT           "Icône actuelle :",IDC_STATIC,11,43,52,8
+END
+
+IDD_ALERTE DIALOGEX 120, 80, 185, 92
+STYLE DS_MODALFRAME | DS_3DLOOK | DS_CENTER | WS_POPUP | WS_VISIBLE | 
+    WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CLIENTEDGE
+CAPTION "AVERTISSEMENT"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "&Oui",IDOK,14,66,50,14
+    PUSHBUTTON      "&Non",7,67,66,50,14
+    PUSHBUTTON      "&Annuler",IDCANCEL,120,66,50,14
+    LTEXT           "Les modifications n'ayant pas été sauvegarder, elles seront perdues.",
+                    IDC_STATIC1,34,14,123,17
+    LTEXT           "Souhaitez-vous sauvegarder avant de quitter ?",
+                    IDC_STATIC2,34,37,91,20
+    ICON            IDI_ICON03,IDC_STATIC,7,13,18,20
+    CONTROL         104,IDC_STATIC,"Static",SS_BITMAP,135,47,23,15
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 186
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 50
+    END
+
+    IDD_PROPRETIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_CHANGEICON, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 212
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_ALERTE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 177
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BOX                 BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_DELETE
+    BUTTON      ID_EDIT_PROPS
+    SEPARATOR
+    BUTTON      ID_AFFICHAGE_GRANDESICONES
+    BUTTON      ID_AFFICHAGE_PETITESICONES
+    BUTTON      ID_AFFICHAGE_LISTES
+    BUTTON      ID_AFFICHAGE_DETAIL
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&Fichier"
+    BEGIN
+        MENUITEM "&Nouveau\tCtrl+N",            ID_FILE_NEW
+        MENUITEM "&Ouvrir...\tCtrl+O",          ID_FILE_OPEN
+        MENUITEM "&Enregistrer\tCtrl+S",        ID_FILE_SAVE
+        MENUITEM "En&registrer sous...",        ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "Exporter",                    IDM_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "&Imprimer...\tCtrl+P",        ID_FILE_PRINT
+        MENUITEM "Aperçu a&vant impression",    ID_FILE_PRINT_PREVIEW
+        MENUITEM "C&onfiguration de l'impression...", ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Fichier récent",              ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "&Quitter",                    ID_APP_EXIT
+    END
+    POPUP "&Edition"
+    BEGIN
+        MENUITEM "&Couper\tCtrl+X",             ID_EDIT_CUT
+        MENUITEM "&Copier\tCtrl+C",             ID_EDIT_COPY
+        MENUITEM "C&oller\tCtrl+V",             ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+        MENUITEM "Effacer\tDel",                ID_EDIT_DELETE
+        MENUITEM "Insérer\tIns",                ID_EDITION_INSERER
+        MENUITEM SEPARATOR
+        MENUITEM "Propriétés\tAlt-Enter",       ID_EDIT_PROPS
+    END
+    POPUP "&Affichage"
+    BEGIN
+        MENUITEM "&Barre d'outils",             ID_VIEW_TOOLBAR
+        MENUITEM "Barre d'é&tat",               ID_VIEW_STATUS_BAR
+        MENUITEM SEPARATOR
+        MENUITEM "Grandes Icônes",              ID_AFFICHAGE_GRANDESICONES
+        MENUITEM "Petites icônes",              ID_AFFICHAGE_PETITESICONES
+        MENUITEM "Listes",                      ID_AFFICHAGE_LISTES
+        MENUITEM "Détail",                      ID_AFFICHAGE_DETAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Options",                     ID_AFFICHAGE_OPTIONS
+    END
+    POPUP "&?"
+    BEGIN
+        MENUITEM "&A propos de MiniApp Reptel...", ID_APP_ABOUT
+    END
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "0c0c04b0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Application MFC MINIAPP REPTEL\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "MINIAPP REPTEL\0"
+            VALUE "LegalCopyright", "Copyright © 1998\0"
+            VALUE "OriginalFilename", "MINIAPP REPTEL.EXE\0"
+            VALUE "ProductName", "Application MINIAPP REPTEL\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0xc0c, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 12, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif\r\n"
+    "#include ""res\\MiniApp Reptel.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.fra\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.fra\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+#endif    // French (Canada) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_FRA)
+#ifdef _WIN32
+LANGUAGE 12, 1
+#pragma code_page(1252)
+#endif
+#include "res\MiniApp Reptel.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.fra\afxres.rc"          // Standard components
+#include "l.fra\afxprint.rc"        // printing/print preview resources
+#endif
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
