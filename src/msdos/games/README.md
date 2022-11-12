@@ -8,8 +8,10 @@ build.bat
 ```
 
 Executives required: (masm61/bin)
+```
   DOSXNT.EXE
   LIB.EXE
   LINK.EXE
   ML.ERR
   ML.EXE
+```
