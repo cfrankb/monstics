@@ -1,0 +1,7 @@
+https://www.gamesthatwerent.com/gtw64/monstics-mystery-2/#tabs-gallery
+https://www.gamesthatwerent.com/submit-news/
+
+Was looking through all the D64 that I made in 2004 of the original disks and I found another game of the Monstics Mystery series, from 1992. It never made it pass the early  prototype stage. Included in the zip are screen caps and the only known disk image.
+D64 contains the dev tool chain (screen editor, graphic editor, image packer etc) +  placeholder graphics and  sprites.
+
+https://github.com/cfrankb/monstics/blob/master/src/c64/lost33b1.zip
