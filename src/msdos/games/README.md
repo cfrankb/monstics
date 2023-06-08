@@ -26,14 +26,18 @@ You can find binary distributions in the bin folder.
 
 ## Screenshots
 
-Creeospread III (cs3)
+<b>Creeospread III (cs3)</b>
+
 ![Image](images/Screenshot_2022-10-19_21-01-20.png 'icon')
 
-Creeospread IV (cs3)
+<b>Creeospread IV (cs3)</b>
+
 ![Image](images/Screenshot_2022-10-19_21-02-31.png 'icon')
 
-The Vlamits (vlamits)
+<b>The Vlamits (vlamits)</b>
+
 ![Image](images/Screenshot_2022-10-19_21-03-43.png 'icon')
 
-The Vlamits II (vlamits2)
+<b>The Vlamits II (vlamits2)</b>
+
 ![Image](images/Screenshot_2022-10-19_21-04-40.png 'icon')
