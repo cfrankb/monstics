@@ -26,7 +26,7 @@ You can find binary distributions in the bin folder.
 
 ## Screenshots
 
-<b>Creeospread III (cs3)</b>
+<b>Creepspread III (cs3)</b>
 
 ![Image](images/Screenshot_2022-10-19_21-01-20.png 'icon')
 
