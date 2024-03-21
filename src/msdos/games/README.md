@@ -30,7 +30,7 @@ You can find binary distributions in the bin folder.
 
 ![Image](images/Screenshot_2022-10-19_21-01-20.png 'icon')
 
-<b>Creeospread IV (cs3)</b>
+<b>Creepspread IV (cs4)</b>
 
 ![Image](images/Screenshot_2022-10-19_21-02-31.png 'icon')
 
